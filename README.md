@@ -3,7 +3,6 @@ Developer: Arron Beale
 
 ![responsive display image]()
 
-[Live Webpage]()
 
 ## Table of Content
 1. [Project Goals](#project-goals)
