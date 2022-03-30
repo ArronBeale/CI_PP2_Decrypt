@@ -38,13 +38,11 @@ Developer: Arron Beale
 ## Project Goals
 
 ### User Goals
-- As a player, I would like to know how to play.
-- As a player, I like to choose a difficulty.
-- As a player, I would like to see my score.
-- As a player, I would like it no overload on screen.
-- As a player, I would like it to be fun.
-- As a player, I would like it to be challenging.
-- As a player, I would like replayability.
+-
+-
+-
+-
+-
 
 ### Site Owner Goals
 - 
@@ -72,27 +70,23 @@ Developer: Arron Beale
 
 ### User Stories
 
-### First Time User
-1. 
-2. 
-3. 
-4. 
-5. 
-
-### Returning User
-6. 
-7. 
+### Player
+1. As a player, I would like to know how to play.
+2. As a player, I like to choose a difficulty.
+3. As a player, I would like to see my score.
+4. As a player, I would like it no overload on screen.
+5. As a player, I would like it to be fun.
+6. As a player, I would like it to be challenging.
+7. As a player, I would like replayability.
+8. As a player, I would like a variety or words to guess.
+9. As a player, I would like to see how many attempts I have.
  
 ### Site Owner
-8. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
+10. As the site owner,
+11. As the site owner,
+12. As the site owner,
+13. As the site owner,
+14. As the site owner,
 
 [Back to Top](<#Table-of-Content>)
 ## Design
@@ -117,7 +111,7 @@ Developer: Arron Beale
 ### Wireframes
 
 <details><summary>Home</summary>
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/wireframes/wireframe-home.png">
 </details>
 
    
