@@ -38,10 +38,13 @@ Developer: Arron Beale
 ## Project Goals
 
 ### User Goals
-- 
-- 
-- 
-- 
+- As a player, I would like to know how to play.
+- As a player, I like to choose a difficulty.
+- As a player, I would like to see my score.
+- As a player, I would like it no overload on screen.
+- As a player, I would like it to be fun.
+- As a player, I would like it to be challenging.
+- As a player, I would like replayability.
 
 ### Site Owner Goals
 - 
