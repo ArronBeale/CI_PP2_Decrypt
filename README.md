@@ -1,7 +1,6 @@
 # Decrypt (Work in progress)
 Developer: Arron Beale
 
-![responsive display image]()
 
 
 ## Table of Content
@@ -60,13 +59,13 @@ The goal of this project is to create a challenging and fun word guessing game.
 - Players who enjoy chance games.
 
 ### User Requirments and Expectations
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- Accessibility and responsiveness.
+- Controls to start and stop the game.
+- A score for the player.
+- A rules section to view game rules.
+- Intuitive gameplay.
+- An option to leave feedback.
+- AN option to change difficulty.
 
 ### User Stories
 
