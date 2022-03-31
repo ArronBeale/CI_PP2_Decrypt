@@ -36,28 +36,28 @@ Developer: Arron Beale
 11. [Acknowledgements](#ackowledgements)
 
 ## Project Goals
+The goal of this project is to create a challenging and fun word guessing game.
 
 ### User Goals
--
--
--
--
--
+- To play a chance puzzle where you guess the word.
+- To have a limited number of attempts alongside a countdown determined by difficulty level.
+- To be able to chhose a difficulty level.
+- Replayable, fun and possibly addictive.
 
 ### Site Owner Goals
-- 
-- 
-- 
-- 
+- Provide a challenging and fun game.
+- Provide various levels of difficulty to the player
+- Provide an option for the player to leave feedback.
+- Provide compatability for different screen sizes.
 
 [Back to Top](<#Table-of-Content>)
 ## User Experience
 
 ### Target Audience
-- 
-- 
-- 
-- 
+- Players with an interest in puzzle style games.
+- Players who would like a challenge.
+- Players who wish to pass the time.
+- Players who enjoy chance games.
 
 ### User Requirments and Expectations
 - 
@@ -74,7 +74,7 @@ Developer: Arron Beale
 1. As a player, I would like to know how to play.
 2. As a player, I like to choose a difficulty.
 3. As a player, I would like to see my score.
-4. As a player, I would like it no overload on screen.
+4. As a player, I would like it minimal, no overload on screen.
 5. As a player, I would like it to be fun.
 6. As a player, I would like it to be challenging.
 7. As a player, I would like replayability.
@@ -82,11 +82,11 @@ Developer: Arron Beale
 9. As a player, I would like to see how many attempts I have.
  
 ### Site Owner
-10. As the site owner,
-11. As the site owner,
-12. As the site owner,
-13. As the site owner,
-14. As the site owner,
+10. As the site owner, I would like the game to be challenging and fun.
+11. As the site owner, I would like a simplistic design.
+12. As the site owner, I would like different device size compatability.
+13. As the site owner, I would like feedback.
+14. As the site owner, I would like to provide difficulty levels.
 
 [Back to Top](<#Table-of-Content>)
 ## Design
