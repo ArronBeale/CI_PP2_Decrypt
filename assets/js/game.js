@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+    let buttons = document.getElementsByClassName('btn');
+    for (let button of buttons) {
+        button.addEventListener('click', function() {
+            if (this.getAttribute('data-type') === 'submit') {
+                checkAnswer();
+                alert('guess');
+            } 
+            if (this.getAttribute('data-type') === 'play') {
+                startGame();
+                alert('play');
+            } 
+            if (this.getAttribute('data-type') === 'stop') {
+                stopGame();
+                alert('stop');
+            }
+        })
+    }
+})
+
 const letters = document.getElementsByClassName('letter-box');
 const guessBox = document.getElementById('guess-input');
 const submitBtn = document.getElementById('submit-btn');
@@ -90,7 +110,7 @@ function generateAnswer() {
 
 }
 
-function checkCorrect() {
+function checkAnswer() {
 
 } 
 
