@@ -12,6 +12,26 @@
     <title>Decrypt | Game</title>
 </head>
 <body>
+    <div id="game-box">
+        <h1>Decrypt</h1>
+
+        <div id="countdown-box">
+            <span id="countdown"></span>
+        </div>
+
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+
+        <label for="guess-input"></label>
+        <input type="text" id="guess-input" minlength="1" maxlength="1">
+
+        <button data-type="submit" id="submit-btn">Guess the word!</button>
+        <span id="attempts-left"></span>
+        <span><i class="fas fa-play"></i><i class="fas fa-stop"></i></span>
+    </div>
    
     <script src="assets/js/game.js"></script>
 </body>
