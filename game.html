@@ -26,11 +26,11 @@
         <div class="letter-box"></div>
         <div class="letter-box"></div>
 
-        <form id="guess-form">
+        <form id="form">
             <label for="guess-input"></label>
-        <input type="text" id="guess-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z">
+            <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z">
 
-        <button data-type="submit" id="submit-btn" class="btn">Guess the word!</button>
+            <button data-type="submit" id="submit-btn" class="btn">Guess the word!</button>
         </form>
         
         <span id="attempts-left"></span>

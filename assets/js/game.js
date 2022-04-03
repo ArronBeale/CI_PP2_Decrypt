@@ -115,12 +115,18 @@ let alphabet = [
     'z'
 ];
 
+const form = document.querySelector('#form')
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const letter = event.target.letter-InputDeviceInfo.value;
+        form.reset();
+    });
 
 function randomNumber() {
     number = Math.floor(Math.random());
 }
 
-function generateAnswer() {
+function generatedAnswer() {
     
     
 }
@@ -138,11 +144,12 @@ function startGame() {
 }
 
 function checkAnswer() {
-    alert('checkAnswer');
-    if (guessBox.value) {
-        alert('yes');
-    }
-} 
+    let userAnswer = document.getElementById('guess-input').value;
+    let generatedAnswer = randomWord.split();
+    let isCorrect = generatedAnswer.contains(userAnswer);
+} if (isCorrect) {
+    alert('correct');
+}
 
 function stopGame() {
 
