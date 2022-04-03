@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
     }
+    document.getElementById('guess-input').addEventListener('keydown', function(eevent) {
+        if (event.key === 'Enter') {
+            checkAnswer();
+        }
+    })
 })
 
 const letters = document.getElementsByClassName('letter-box');
@@ -26,7 +31,7 @@ const playBtn = document.getElementById('fa-play');
 const stopBtn = document.getElementById('fa-stop');
 
 
-let guessedLetter = '';
+let guessedLetters = [];
 let word = '';
 
 let words = [
@@ -120,23 +125,26 @@ function generateAnswer() {
     
 }
 
-function checkAnswer() {
-    
-} 
+function countDown() {
+
+}
 
 function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
 
-    let randomWord = words[Math.floor(Math.random() * words.length)];
+    var randomWord = words[Math.floor(Math.random() * words.length)];
     document.getElementById('test').innerHTML = randomWord;
 }
 
+function checkAnswer() {
+    alert('checkAnswer');
+    if (guessBox.value) {
+        alert('yes');
+    }
+} 
+
 function stopGame() {
-
-}
-
-function countDown() {
 
 }
 
