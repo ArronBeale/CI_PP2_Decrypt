@@ -25,6 +25,10 @@ const attemptsLeft = document.getElementById('attempts-left');
 const playBtn = document.getElementById('fa-play');
 const stopBtn = document.getElementById('fa-stop');
 
+
+let guessedLetter = '';
+let word = '';
+
 let words = [
     'which',
     'their',
@@ -106,16 +110,26 @@ let alphabet = [
     'z'
 ];
 
-function generateAnswer() {
 
+function randomNumber() {
+    number = Math.floor(Math.random());
+}
+
+function generateAnswer() {
+    
+    
 }
 
 function checkAnswer() {
-
+    
 } 
 
 function startGame() {
+    document.getElementById('guess-input').value = '';
+    document.getElementById('guess-input').focus();
 
+    let randomWord = words[Math.floor(Math.random() * words.length)];
+    document.getElementById('test').innerHTML = randomWord;
 }
 
 function stopGame() {
