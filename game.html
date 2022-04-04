@@ -20,27 +20,29 @@
             <span id="test"></span>
         </div>
 
-        <div class="letter-box"></div>
-        <div class="letter-box"></div>
-        <div class="letter-box"></div>
-        <div class="letter-box"></div>
-        <div class="letter-box"></div>
+        <div class="letter-box" id="box1"></div>
+        <div class="letter-box" id="box2"></div>
+        <div class="letter-box" id="box3"></div>
+        <div class="letter-box" id="box4"></div>
+        <div class="letter-box" id="box5"></div>
 
         <form id="form">
             <label for="guess-input"></label>
-            <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[A-Za-z]">
+            <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z]">
 
-            <button data-type="submit" id="submit-btn" class="btn">Guess the word!</button>
+            <button data-type="submit" id="submit-btn" class="btn">Guess!</button>
         </form>
         
         <span id="attempts-left"></span>
 
         <span>
-            <i data-type="play" class="fas fa-play btn"></i>
+            <i data-type="play" class="fas fa-play btn" onclick="startGame()"></i>
         </span>
         <span>
             <i data-type="stop" class="fas fa-stop btn"></i>
         </span>
+
+        <div id="used-letters-box"></div>
 
     </div>
    

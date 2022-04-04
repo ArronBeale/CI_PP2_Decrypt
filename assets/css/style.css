@@ -28,7 +28,7 @@ h1 {
 #countdown-box {
     display: block;
     height: 60px;
-    width: 60px;
+    width: 220px;
     background-color: white;
     margin-top: 50px;
     margin-left: auto;
@@ -44,7 +44,7 @@ h1 {
 display: inline-block;
 height: 50px;
 width: 50px;
-background-color: white;
+background-color: rgb(85, 212, 53);
 margin-top: 20px;
 border-radius: 15px;
 text-align: center;
@@ -84,6 +84,20 @@ font-size: 1.8rem;
     display: block;
     margin-top: 20px;
     font-size: 1.3rem;
+}
+
+#used-letters-box {
+    display: block;
+    height: 60px;
+    width: 220px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.9rem;
 }
 
 .fas {
