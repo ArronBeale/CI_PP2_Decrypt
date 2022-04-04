@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type') === 'submit') {
-                checkAnswer();
                 alert('guess');
             } 
             if (this.getAttribute('data-type') === 'play') {
@@ -33,6 +32,8 @@ const stopBtn = document.getElementById('fa-stop');
 
 let guessedLetters = [];
 let word = '';
+let answerArray = [];
+let guess = document.getElementById('guess-input').value;
 
 let words = [
     'which',
@@ -123,7 +124,7 @@ const form = document.querySelector('#form')
     });
 
 function randomNumber() {
-    number = Math.floor(Math.random());
+    number = Math.floor(Math.random() * 49);
 }
 
 function generatedAnswer() {
@@ -139,42 +140,7 @@ function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
 
-    var randomWord = words[Math.floor(Math.random() * words.length)];
+    let randomWord = words[Math.floor(Math.random() * words.length)];
     document.getElementById('test').innerHTML = randomWord;
-}
-
-function checkAnswer() {
-    let userAnswer = document.getElementById('guess-input').value;
-    let generatedAnswer = randomWord.split();
-    let isCorrect = generatedAnswer.contains(userAnswer);
-} if (isCorrect) {
-    alert('correct');
-}
-
-function stopGame() {
-
-}
-
-function easyMode() {
-
-}
-
-function easyModeCountdown() {
-
-}
-
-function mediumMode() {
-    
-}
-
-function mediumModeCountDown() {
-    
-}
-
-function hardMode() {
-    
-}
-
-function hardModeCountDown() {
-    
+    answerArray = randomWord.split()
 }
