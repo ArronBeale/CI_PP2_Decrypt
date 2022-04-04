@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type') === 'submit') {
-                alert('guess');
+                
             } 
             if (this.getAttribute('data-type') === 'play') {
                 startGame();
-                alert('play');
             } 
             if (this.getAttribute('data-type') === 'stop') {
                 stopGame();
@@ -15,23 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
     }
-    document.getElementById('guess-input').addEventListener('keydown', function(eevent) {
+    document.getElementById('guess-input').addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
-            checkAnswer();
+            checkLetter();
         }
     })
 })
 
-const letters = document.getElementsByClassName('letter-box');
-const guessBox = document.getElementById('guess-input');
+const letterBoxes = document.getElementsByClassName('letter-box');
 const submitBtn = document.getElementById('submit-btn');
-const attemptsLeft = document.getElementById('attempts-left');
 const playBtn = document.getElementById('fa-play');
 const stopBtn = document.getElementById('fa-stop');
+const box1 = document.getElementById('box1');
+const box2 = document.getElementById('box2');
+const box3 = document.getElementById('box3');
+const box4 = document.getElementById('box4');
+const box5 = document.getElementById('box5');
 
-
-let guessedLetters = [];
+let guessedLetter = document.getElementById('guess-input');;
 let word = '';
+let attemptsLeft = 5;
 let answerArray = [];
 let guess = document.getElementById('guess-input').value;
 
@@ -117,10 +119,22 @@ let alphabet = [
 ];
 
 const form = document.querySelector('#form')
+const usedLetters = [];
+
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-        const letter = event.target.letter-InputDeviceInfo.value;
+        let letter = document.getElementById('guess-input').value;
+        let isCorrect = ''
         form.reset();
+        if (answerArray.includes(letter)) {
+            console.log('match');
+            isCorrect = true;
+        } else {
+            console.log('not a match');
+            isCorrect = false;
+        }
+
+        
     });
 
 function randomNumber() {
@@ -136,11 +150,37 @@ function countDown() {
 
 }
 
+
+
 function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
 
     let randomWord = words[Math.floor(Math.random() * words.length)];
     document.getElementById('test').innerHTML = randomWord;
-    answerArray = randomWord.split()
+    answerArray = [];
+    
+    for (let i = 0; i < 5; i++) {
+        answerArray.push(randomWord[i]);
+    }
+
+    let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box1.innerHTML = randomLetter1;
+    let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box2.innerHTML = randomLetter2;
+    let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box3.innerHTML = randomLetter3;
+    let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box4.innerHTML = randomLetter4;
+    let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box5.innerHTML = randomLetter5;
+
 }
+
+function checkLetter() {
+    let letter = document.getElementById('guess-input');
+    
+}
+
+
+
