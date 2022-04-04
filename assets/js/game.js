@@ -35,8 +35,9 @@ let guessedLetter = document.getElementById('guess-input');;
 let word = '';
 let attemptsLeft = 5;
 let answerArray = [];
+let correctArray = [];
 let guess = document.getElementById('guess-input').value;
-
+let isCorrect = '';
 let words = [
     'which',
     'their',
@@ -124,11 +125,12 @@ const usedLetters = [];
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         let letter = document.getElementById('guess-input').value;
-        let isCorrect = ''
+        isCorrect = ''
         form.reset();
         if (answerArray.includes(letter)) {
             console.log('match');
             isCorrect = true;
+            correctArray.push(letter);
         } else {
             console.log('not a match');
             isCorrect = false;
@@ -156,6 +158,7 @@ function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
 
+    correctArray = [];
     let randomWord = words[Math.floor(Math.random() * words.length)];
     document.getElementById('test').innerHTML = randomWord;
     answerArray = [];
