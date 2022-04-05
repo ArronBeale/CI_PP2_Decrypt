@@ -149,6 +149,7 @@ function startGame() {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
+        document.getElementById('guess-input').focus();
         let letter = document.getElementById('guess-input').value;
         isCorrect = ''
         form.reset();

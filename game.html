@@ -14,6 +14,9 @@
 <body>
     <div id="game-box">
         <h1>Decrypt</h1>
+        <div class="score-box">
+            <p>Score: <span id="score">0</span></p>
+        </div>
 
         <div id="countdown-box">
             <span id="countdown"></span>
@@ -33,7 +36,9 @@
             <button data-type="submit" id="submit-btn" class="btn">Guess!</button>
         </form>
         
-        <span id="attempts-left"></span>
+        <div class="score-box">
+            <p>Attempts left: <span id="attempts">5</span></p>
+        </div>
 
         <span>
             <i data-type="play" class="fas fa-play btn" onclick="startGame()"></i>
