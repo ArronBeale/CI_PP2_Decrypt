@@ -31,6 +31,7 @@ const box3 = document.getElementById('box3');
 const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
 const form = document.querySelector('#form');
+const boxArray = [box1, box2, box3, box4, box5];
 const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
@@ -124,6 +125,10 @@ let alphabet = [
     'z'
 ];
 
+/** Starts the game and resets the score to 0 and attempts to 5.
+ * Focuses on the input so the player can immediatly start entering 
+ * guesses without fist clicking on it.
+ */
 function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
@@ -166,8 +171,10 @@ function startGame() {
             console.log('match');
             isCorrect = true;
             correctArray.push(letter);
+            placeCorrectLetter();
             if (score < 5) {
                 scoreBox.innerHTML = score +=1;
+                checkWin();
             }
         } else {
             console.log('not a match');
@@ -178,21 +185,28 @@ function startGame() {
         document.getElementById('used-letters-box').innerHTML += letter;
     });
 
+    
 function randomNumber() {
     number = Math.floor(Math.random() * 49);
 }
 
-function generatedAnswer() {
-    
-    
+function checkWin() {
+    if (correctArray.length == 5) {
+        alert('Win');
+    }
+}
+
+function placeCorrectLetter() {
+    for (i = 0; i < correctArray.length; i++) {
+        if (letter = correctArray[i]) {
+            boxArray[i].innerHTML = letter;
+        }
+    }
 }
 
 function countDown() {
 
 }
-
-
-
 
 
 function checkLetter() {
