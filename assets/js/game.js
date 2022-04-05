@@ -36,7 +36,7 @@ const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 
 let score = 0;
-let attempts = 0;
+let attempts = 5;
 let guessedLetter = document.getElementById('guess-input');;
 let word = '';
 let attemptsLeft = 5;
@@ -130,8 +130,10 @@ function startGame() {
     document.getElementById('guess-input').focus();
     score = 0;
     attempts = 5;
-
+    scoreBox.innerHTML = score;
+    attemptsBox.innerHTML = attempts;
     correctArray = [];
+
     let randomWord = words[Math.floor(Math.random() * words.length)];
     document.getElementById('test').innerHTML = randomWord;
     answerArray = [];
@@ -156,16 +158,20 @@ function startGame() {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         document.getElementById('guess-input').focus();
+
         let letter = document.getElementById('guess-input').value;
         isCorrect = ''
         form.reset();
+
         if (answerArray.includes(letter)) {
             console.log('match');
             isCorrect = true;
+            scoreBox.innerHTML = score +=1;
             correctArray.push(letter);
         } else {
             console.log('not a match');
             isCorrect = false;
+            attemptsBox.innerHTML = attempts -=1;
         }
         usedLetters.push(letter);
         document.getElementById('used-letters-box').innerHTML += letter;
