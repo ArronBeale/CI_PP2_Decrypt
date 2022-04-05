@@ -197,9 +197,10 @@ function checkWin() {
 }
 
 function placeCorrectLetter() {
+    let letter = document.getElementById('guess-input').value;
     for (i = 0; i < correctArray.length; i++) {
-        if (letter = correctArray[i]) {
-            boxArray[i].innerHTML = letter;
+        if (answerArray[i].includes(letter)) {
+            boxArray[i].innerHTML = answerArray[i];
         }
     }
 }

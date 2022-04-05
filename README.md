@@ -214,7 +214,7 @@ First Time User:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| | |
+|used letters not wiping on new game | |
 
 
 [Back to Top](<#Table-of-Content>)
