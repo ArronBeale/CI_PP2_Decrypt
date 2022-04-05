@@ -30,9 +30,13 @@ const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
 const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
-const form = document.querySelector('#form')
+const form = document.querySelector('#form');
 const usedLetters = [];
+const scoreBox = document.querySelector('#score');
+const attemptsBox = document.querySelector('#attempts');
 
+let score = 0;
+let attempts = 0;
 let guessedLetter = document.getElementById('guess-input');;
 let word = '';
 let attemptsLeft = 5;
@@ -124,6 +128,8 @@ let alphabet = [
 function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
+    score = 0;
+    attempts = 5;
 
     correctArray = [];
     let randomWord = words[Math.floor(Math.random() * words.length)];
@@ -161,8 +167,8 @@ function startGame() {
             console.log('not a match');
             isCorrect = false;
         }
-
-        
+        usedLetters.push(letter);
+        document.getElementById('used-letters-box').innerHTML += letter;
     });
 
 function randomNumber() {
