@@ -37,7 +37,6 @@ const attemptsBox = document.querySelector('#attempts');
 
 let score = 0;
 let attempts = 5;
-let guessedLetter = document.getElementById('guess-input');;
 let word = '';
 let attemptsLeft = 5;
 let answerArray = [];
@@ -166,8 +165,10 @@ function startGame() {
         if (answerArray.includes(letter)) {
             console.log('match');
             isCorrect = true;
-            scoreBox.innerHTML = score +=1;
             correctArray.push(letter);
+            if (score < 5) {
+                scoreBox.innerHTML = score +=1;
+            }
         } else {
             console.log('not a match');
             isCorrect = false;
@@ -195,7 +196,7 @@ function countDown() {
 
 
 function checkLetter() {
-    let letter = document.getElementById('guess-input');
+    
     
 }
 
