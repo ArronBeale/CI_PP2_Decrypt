@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 startGame();
             }
             if (this.getAttribute('data-type') === 'stop') {
-
+                stopGame();
             }
         })
     }
@@ -161,7 +161,26 @@ function startGame() {
 
 }
 
-form.addEventListener('submit', function (event) {
+function stopGame() {
+    document.getElementById('guess-input').value = '';
+    document.getElementById('guess-input').focus();
+    score = 0;
+    attempts = 5;
+    scoreBox.innerHTML = score;
+    attemptsBox.innerHTML = attempts;
+    let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box1.innerHTML = 'A';
+    let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box2.innerHTML = 'B';
+    let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box3.innerHTML = 'O';
+    let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box4.innerHTML = 'R';
+    let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box5.innerHTML = 'T';
+}
+
+form.addEventListener('keyup', function (event) {
     event.preventDefault();
     document.getElementById('guess-input').focus();
 
@@ -170,7 +189,6 @@ form.addEventListener('submit', function (event) {
     if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
-        correctLetters.push(guess);
         if (score < 5) {
             scoreBox.innerHTML = score += 1;
         }

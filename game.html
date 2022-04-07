@@ -18,23 +18,23 @@
             <p>Score: <span id="score">0</span></p>
         </div>
 
-        <div id="countdown-box">
-            <span id="test"></span>
+        <div id="answer-box">
+            <span id="answer"></span>
         </div>
 
-        <span id="answer"></span>
+        
 
-        <div class="letter-box" id="box1"></div>
-        <div class="letter-box" id="box2"></div>
-        <div class="letter-box" id="box3"></div>
-        <div class="letter-box" id="box4"></div>
-        <div class="letter-box" id="box5"></div>
+        <div class="letter-box" id="box1">-</div>
+        <div class="letter-box" id="box2">-</div>
+        <div class="letter-box" id="box3">-</div>
+        <div class="letter-box" id="box4">-</div>
+        <div class="letter-box" id="box5">-</div>
 
         <form id="form">
             <label for="guess-input"></label>
             <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z]">
 
-            <button data-type="submit" id="submit-btn" class="btn">Guess!</button>
+            <!-- <button data-type="submit" id="submit-btn" class="btn">Guess!</button> -->
         </form>
         
         <div class="score-box">
