@@ -207,7 +207,16 @@ function checkWin() {
 }
 
 function loseGame() {
-    alert('lose');
+    let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box1.innerHTML = 'L';
+    let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box2.innerHTML = 'O';
+    let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box3.innerHTML = 'S';
+    let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box4.innerHTML = 'E';
+    let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
+    box5.innerHTML = '!';
 }
 
 function countDown() {
@@ -235,7 +244,6 @@ function checkLetter() {
         }
         if (attempts == 0) {
             loseGame();
-            stopGame();
         }
     }
 }
