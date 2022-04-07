@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByClassName('btn');
     for (let button of buttons) {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'submit') {
-                
-            } 
+
+            }
             if (this.getAttribute('data-type') === 'play') {
                 startGame();
-            } 
+            }
             if (this.getAttribute('data-type') === 'stop') {
                 stopGame();
                 alert('stop');
             }
         })
     }
-    document.getElementById('guess-input').addEventListener('keydown', function(event) {
+    document.getElementById('guess-input').addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
             checkLetter();
         }
@@ -39,11 +39,16 @@ const attemptsBox = document.querySelector('#attempts');
 let score = 0;
 let attempts = 5;
 let word = '';
+let randomWord;
+let hiddenWord;
 let attemptsLeft = 5;
 let answerArray = [];
-let correctArray = [];
-let guess = document.getElementById('guess-input').value;
-let isCorrect = '';
+let correctLetters = [];
+let wrongLetters = [];
+let guess = '';
+
+
+
 let words = [
     'which',
     'their',
@@ -118,7 +123,7 @@ let alphabet = [
     's',
     't',
     'u',
-    'v', 
+    'v',
     'w',
     'x',
     'y',
@@ -136,12 +141,14 @@ function startGame() {
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
-    correctArray = [];
+    correctLetters = [];
 
-    let randomWord = words[Math.floor(Math.random() * words.length)];
+    randomWord = words[Math.floor(Math.random() * words.length)];
+    hiddenWord = randomWord.replace(/./gi,"-");
     document.getElementById('test').innerHTML = randomWord;
+    document.getElementById('secret').innerHTML = hiddenWord;
     answerArray = [];
-    
+
     for (let i = 0; i < 5; i++) {
         answerArray.push(randomWord[i]);
     }
@@ -159,49 +166,40 @@ function startGame() {
 
 }
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        document.getElementById('guess-input').focus();
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    document.getElementById('guess-input').focus();
 
-        let letter = document.getElementById('guess-input').value;
-        isCorrect = ''
-        form.reset();
+    let letter = document.getElementById('guess-input').value;
+    isCorrect = ''
+    form.reset();
 
-        if (answerArray.includes(letter)) {
-            console.log('match');
-            isCorrect = true;
-            correctArray.push(letter);
-            placeCorrectLetter();
-            if (score < 5) {
-                scoreBox.innerHTML = score +=1;
-                checkWin();
-            }
-        } else {
-            console.log('not a match');
-            isCorrect = false;
-            attemptsBox.innerHTML = attempts -=1;
+    if (answerArray.includes(letter)) {
+        console.log('match');
+        isCorrect = true;
+        correctLetters.push(letter);
+        placeCorrectLetter();
+        if (score < 5) {
+            scoreBox.innerHTML = score += 1;
+            checkWin();
         }
-        usedLetters.push(letter);
-        document.getElementById('used-letters-box').innerHTML += letter;
-    });
+    } else {
+        console.log('not a match');
+        isCorrect = false;
+        attemptsBox.innerHTML = attempts -= 1;
+    }
+    usedLetters.push(letter);
+    document.getElementById('used-letters-box').innerHTML += letter;
+});
 
-    
+
 function randomNumber() {
     number = Math.floor(Math.random() * 49);
 }
 
 function checkWin() {
-    if (correctArray.length == 5) {
+    if (correctLetters.length == 5) {
         alert('Win');
-    }
-}
-
-function placeCorrectLetter() {
-    let letter = document.getElementById('guess-input').value;
-    for (i = 0; i < correctArray.length; i++) {
-        if (answerArray[i].includes(letter)) {
-            boxArray[i].innerHTML = answerArray[i];
-        }
     }
 }
 
@@ -211,9 +209,20 @@ function countDown() {
 
 
 function checkLetter() {
-    
-    
+    document.onkeyup = function(event) {
+        guess = event.key.toLowerCase();
+        var found = false;
+        for (i = 0; i < randomWord.length; i++) {
+            if (guess === randomWord[i]) {
+                correctLetters[i] = guess;
+                document.getElementById('answer').innerHTML = correctLetters.join(" ");
+                found = true;
+            };
+            if (found) return;
+            if (wrongLetters.indexOf(guess) < 0) {
+                document.getElementById('used-letters-box').innerHTML = wrongLetters.join(" ");
+            }
+        } 
+    }
+
 }
-
-
-
