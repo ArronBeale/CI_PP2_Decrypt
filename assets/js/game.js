@@ -141,7 +141,7 @@ function startGame() {
     answerArray = [];
 
     for (let i = 0; i < words.length; i++) {
-        correctLetters[i] = "__";
+        correctLetters[i] = '';
     }
 
     for (let i = 0; i < 5; i++) {
@@ -164,6 +164,7 @@ function startGame() {
 function stopGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
+    document.getElementById("answer").innerHTML = '';
     score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
@@ -205,6 +206,10 @@ function checkWin() {
 
 }
 
+function loseGame() {
+    alert('lose');
+}
+
 function countDown() {
 
 }
@@ -217,7 +222,7 @@ function checkLetter() {
         for (i = 0; i < word.length; i++) {
             if (guess === word[i]) {
                 correctLetters[i] = guess;
-                document.getElementById("answer").innerHTML = correctLetters.join(" ");
+                document.getElementById("answer").innerHTML = correctLetters.join('');
                 found = true;
             }
         }
@@ -226,7 +231,11 @@ function checkLetter() {
 
         if (wrongLetters.indexOf(guess) < 0) {
             wrongLetters.push(guess);
-            document.getElementById("used-letters-box").innerHTML = wrongLetters.join(" ");
+            document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
+        }
+        if (attempts == 0) {
+            loseGame();
+            stopGame();
         }
     }
 }
