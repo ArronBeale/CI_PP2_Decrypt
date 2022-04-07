@@ -1,54 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let buttons = document.getElementsByClassName('btn');
-    for (let button of buttons) {
-        button.addEventListener('click', function () {
-            if (this.getAttribute('data-type') === 'submit') {
-
-            }
-            if (this.getAttribute('data-type') === 'play') {
-                startGame();
-            }
-            if (this.getAttribute('data-type') === 'stop') {
-                stopGame();
-                alert('stop');
-            }
-        })
-    }
-    document.getElementById('guess-input').addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            checkLetter();
-        }
-    })
-})
-
-const letterBoxes = document.getElementsByClassName('letter-box');
-const submitBtn = document.getElementById('submit-btn');
-const playBtn = document.getElementById('fa-play');
-const stopBtn = document.getElementById('fa-stop');
-const box1 = document.getElementById('box1');
-const box2 = document.getElementById('box2');
-const box3 = document.getElementById('box3');
-const box4 = document.getElementById('box4');
-const box5 = document.getElementById('box5');
-const form = document.querySelector('#form');
-const boxArray = [box1, box2, box3, box4, box5];
-const usedLetters = [];
-const scoreBox = document.querySelector('#score');
-const attemptsBox = document.querySelector('#attempts');
-
-let score = 0;
-let attempts = 5;
-let word = '';
-let randomWord;
-let hiddenWord;
-let attemptsLeft = 5;
-let answerArray = [];
-let correctLetters = [];
-let wrongLetters = [];
-let guess = '';
-
-
-
 let words = [
     'which',
     'their',
@@ -101,6 +50,32 @@ let words = [
     'above'
 ];
 
+const letterBoxes = document.getElementsByClassName('letter-box');
+const submitBtn = document.getElementById('submit-btn');
+const playBtn = document.getElementById('fa-play');
+const stopBtn = document.getElementById('fa-stop');
+const box1 = document.getElementById('box1');
+const box2 = document.getElementById('box2');
+const box3 = document.getElementById('box3');
+const box4 = document.getElementById('box4');
+const box5 = document.getElementById('box5');
+const form = document.querySelector('#form');
+const boxArray = [box1, box2, box3, box4, box5];
+const usedLetters = [];
+const scoreBox = document.querySelector('#score');
+const attemptsBox = document.querySelector('#attempts');
+
+let score = 0;
+let attempts = 5;
+let word = words[Math.floor(Math.random() * words.length)];
+let attemptsLeft = 5;
+let answerArray = [];
+let correctLetters = [];
+let wrongLetters = [];
+let guess = '';
+
+
+
 let alphabet = [
     'a',
     'b',
@@ -130,6 +105,27 @@ let alphabet = [
     'z'
 ];
 
+document.addEventListener('DOMContentLoaded', function () {
+    let buttons = document.getElementsByClassName('btn');
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            if (this.getAttribute('data-type') === 'submit') {
+
+            }
+            if (this.getAttribute('data-type') === 'play') {
+                startGame();
+            }
+            if (this.getAttribute('data-type') === 'stop') {
+
+            }
+        })
+    }
+
+})
+
+
+
+
 /** Starts the game and resets the score to 0 and attempts to 5.
  * Focuses on the input so the player can immediatly start entering 
  * guesses without fist clicking on it.
@@ -141,16 +137,15 @@ function startGame() {
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
-    correctLetters = [];
 
-    randomWord = words[Math.floor(Math.random() * words.length)];
-    hiddenWord = randomWord.replace(/./gi,"-");
-    document.getElementById('test').innerHTML = randomWord;
-    document.getElementById('secret').innerHTML = hiddenWord;
     answerArray = [];
 
+    for (let i = 0; i < words.length; i++) {
+        correctLetters[i] = "__";
+    }
+
     for (let i = 0; i < 5; i++) {
-        answerArray.push(randomWord[i]);
+        answerArray.push(word[i]);
     }
 
     let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
@@ -170,37 +165,26 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     document.getElementById('guess-input').focus();
 
-    let letter = document.getElementById('guess-input').value;
-    isCorrect = ''
     form.reset();
-
-    if (answerArray.includes(letter)) {
+    checkLetter();
+    if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
-        correctLetters.push(letter);
-        placeCorrectLetter();
+        correctLetters.push(guess);
         if (score < 5) {
             scoreBox.innerHTML = score += 1;
-            checkWin();
         }
+
     } else {
         console.log('not a match');
-        isCorrect = false;
         attemptsBox.innerHTML = attempts -= 1;
     }
-    usedLetters.push(letter);
-    document.getElementById('used-letters-box').innerHTML += letter;
+    
 });
 
 
-function randomNumber() {
-    number = Math.floor(Math.random() * 49);
-}
-
 function checkWin() {
-    if (correctLetters.length == 5) {
-        alert('Win');
-    }
+
 }
 
 function countDown() {
@@ -209,20 +193,22 @@ function countDown() {
 
 
 function checkLetter() {
-    document.onkeyup = function(event) {
+    document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
         var found = false;
-        for (i = 0; i < randomWord.length; i++) {
-            if (guess === randomWord[i]) {
+        for (i = 0; i < word.length; i++) {
+            if (guess === word[i]) {
                 correctLetters[i] = guess;
-                document.getElementById('answer').innerHTML = correctLetters.join(" ");
+                document.getElementById("answer").innerHTML = correctLetters.join(" ");
                 found = true;
-            };
-            if (found) return;
-            if (wrongLetters.indexOf(guess) < 0) {
-                document.getElementById('used-letters-box').innerHTML = wrongLetters.join(" ");
             }
-        } 
-    }
+        }
 
+        if (found) return;
+
+        if (wrongLetters.indexOf(guess) < 0) {
+            wrongLetters.push(guess);
+            document.getElementById("used-letters-box").innerHTML = wrongLetters.join(" ");
+        }
+    }
 }
