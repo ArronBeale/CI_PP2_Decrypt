@@ -211,7 +211,7 @@ form.addEventListener('keyup', function (event) {
 
     } else {
         console.log('not a match');
-        attemptsBox.innerHTML = attempts -= 1;
+        // attemptsBox.innerHTML = attempts -= 1;
     }
 
 });
@@ -235,6 +235,7 @@ function loseGame() {
     box4.innerHTML = 'E';
     let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box5.innerHTML = '!';
+    document.getElementById("guess-input").disabled = true;
 }
 
 function countDown() {
@@ -259,6 +260,7 @@ function checkLetter() {
         if (wrongLetters.indexOf(guess) < 0) {
             wrongLetters.push(guess);
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
+            attemptsBox.innerHTML = attempts -= 1;
         }
         if (attempts == 0) {
             loseGame();
