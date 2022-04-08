@@ -73,7 +73,7 @@ let answerArray = [];
 let correctLetters = [];
 let wrongLetters = [];
 let guess = '';
-
+let wordPlace = null;
 
 
 let alphabet = [
@@ -124,9 +124,17 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
+/** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
+ * and it's position in the word
+ */
+function letterSpace() {
+    wordPlace = word.split('').map(letter => (correctLetters.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+    document.getElementById('answer').innerHTML = wordPlace;
+}
 
 
-/** Starts the game and resets the score to 0 and attempts to 5.
+/** Starts the game. Player can use it to cycle new games and refresh the word to guess, 
+ * resets the score to 0 and attempts to 5.
  * Focuses on the input so the player can immediatly start entering 
  * guesses without fist clicking on it.
  */
@@ -139,6 +147,7 @@ function startGame() {
     attemptsBox.innerHTML = attempts;
 
     answerArray = [];
+    letterSpace();
 
     for (let i = 0; i < words.length; i++) {
         correctLetters[i] = '';
@@ -161,6 +170,9 @@ function startGame() {
 
 }
 
+/** this function will stop the game and reset the score to 0 and reset the attempts to 5.
+ * It will change the text in the letter boxes to say ended.
+ */
 function stopGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
@@ -169,24 +181,27 @@ function stopGame() {
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
+    letterSpace();
     let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
-    box1.innerHTML = 'A';
+    box1.innerHTML = 'E';
     let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
-    box2.innerHTML = 'B';
+    box2.innerHTML = 'N';
     let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
-    box3.innerHTML = 'O';
+    box3.innerHTML = 'D';
     let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
-    box4.innerHTML = 'R';
+    box4.innerHTML = 'E';
     let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
-    box5.innerHTML = 'T';
+    box5.innerHTML = 'D';
 }
 
 form.addEventListener('keyup', function (event) {
     event.preventDefault();
     document.getElementById('guess-input').focus();
-
-    form.reset();
+    letterSpace();
     checkLetter();
+    form.reset();
+
+
     if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
@@ -198,14 +213,17 @@ form.addEventListener('keyup', function (event) {
         console.log('not a match');
         attemptsBox.innerHTML = attempts -= 1;
     }
-    
+
 });
 
 
-function checkWin() {
+function win() {
 
 }
 
+/** this function will activate once lose conditions are met, it
+ * will then cause the lose screen to display to the player.
+ */
 function loseGame() {
     let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box1.innerHTML = 'L';
@@ -223,7 +241,10 @@ function countDown() {
 
 }
 
-
+/** this function activates on keyup of the players input
+ * and then determines if the players guess is correct or incorrect.
+ * It then places letter into the word display or used letters
+ */
 function checkLetter() {
     document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
@@ -231,13 +252,10 @@ function checkLetter() {
         for (i = 0; i < word.length; i++) {
             if (guess === word[i]) {
                 correctLetters[i] = guess;
-                document.getElementById("answer").innerHTML = correctLetters.join('');
-                found = true;
+                letterSpace();
             }
         }
-
         if (found) return;
-
         if (wrongLetters.indexOf(guess) < 0) {
             wrongLetters.push(guess);
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
@@ -247,3 +265,5 @@ function checkLetter() {
         }
     }
 }
+
+letterSpace();
