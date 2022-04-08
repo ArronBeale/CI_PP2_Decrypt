@@ -74,6 +74,7 @@ let correctLetters = [];
 let wrongLetters = [];
 let guess = '';
 let wordPlace = null;
+let isCorrect;
 
 
 let alphabet = [
@@ -118,10 +119,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.getAttribute('data-type') === 'stop') {
                 stopGame();
             }
-        })
+        });
     }
 
-})
+});
 
 
 /** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
@@ -185,15 +186,10 @@ function stopGame() {
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
     letterSpace();
-    let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box1.innerHTML = 'E';
-    let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box2.innerHTML = 'N';
-    let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box3.innerHTML = 'D';
-    let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box4.innerHTML = 'E';
-    let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box5.innerHTML = 'D';
 }
 
@@ -228,15 +224,10 @@ function win() {
  * will then cause the lose screen to display to the player.
  */
 function loseGame() {
-    let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box1.innerHTML = 'L';
-    let randomLetter2 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box2.innerHTML = 'O';
-    let randomLetter3 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box3.innerHTML = 'S';
-    let randomLetter4 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box4.innerHTML = 'E';
-    let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
 }
@@ -252,7 +243,7 @@ function countDown() {
 function checkLetter() {
     document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
-        var found = false;
+        let found = false;
         for (i = 0; i < word.length; i++) {
             if (guess === word[i]) {
                 correctLetters[i] = guess;
@@ -268,7 +259,7 @@ function checkLetter() {
         if (attempts == 0) {
             loseGame();
         }
-    }
+    };
 }
 
 letterSpace();
