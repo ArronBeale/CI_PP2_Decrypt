@@ -141,6 +141,7 @@ function letterSpace() {
 function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
+    document.getElementById("guess-input").disabled = false;
     score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
@@ -177,6 +178,8 @@ function stopGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("answer").innerHTML = '';
+    document.getElementById("guess-input").disabled = true;
+    
     score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
@@ -211,7 +214,7 @@ form.addEventListener('keyup', function (event) {
 
     } else {
         console.log('not a match');
-        // attemptsBox.innerHTML = attempts -= 1;
+        
     }
 
 });
