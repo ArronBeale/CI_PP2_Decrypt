@@ -208,7 +208,6 @@ function stopGame() {
     document.getElementById("guess-input").disabled = true;
 
     score = 0;
-    attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
@@ -232,7 +231,6 @@ function winGame() {
         document.getElementById("guess-input").disabled = true;
         usedLettersBox.innerHTML = '';
         scoreBox.innerHTML = score += 1;
-        startGame();
     }
 }
 
@@ -243,6 +241,7 @@ function winGame() {
  * will then cause the lose screen to display to the player.
  */
 function loseGame() {
+    score = 0;
     box1.innerHTML = 'L';
     box2.innerHTML = 'O';
     box3.innerHTML = 'S';
@@ -250,6 +249,7 @@ function loseGame() {
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
+    setTimeout(function(){ stopGame(); }, 3000);
 }
 
 function countDown() {
@@ -278,7 +278,7 @@ function checkLetter() {
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
             attemptsBox.innerHTML = attempts -= 1;
         }
-        if (attempts == 0 && score < 5) {
+        if (attempts == 0) {
             loseGame();
         }
     };
