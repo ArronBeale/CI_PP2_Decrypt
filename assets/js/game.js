@@ -83,10 +83,10 @@ const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
+const answerBox = document.getElementById('answer-box');
 let score = 0;
 let attempts = 5;
 let word = words[Math.floor(Math.random() * words.length)];
-let attemptsLeft = 5;
 let answerArray = [];
 let correctLetters = [];
 let wrongLetters = [];
@@ -130,7 +130,7 @@ form.addEventListener('keyup', function (event) {
     letterSpace();
     checkLetter();
     form.reset();
-    
+
 
     if (answerArray.includes(guess)) {
         console.log('match');
@@ -141,7 +141,9 @@ form.addEventListener('keyup', function (event) {
         console.log('not a match');
 
     }
-    if ()
+    if (wordPlace === word) {
+        winGame();
+    }
 });
 
 /* I had to google a code example for the below function from a hangman game for placing an underscore that would then 
@@ -221,18 +223,18 @@ function stopGame() {
 }
 
 function winGame() {
-    for (i = 0; i < answerArray.length; i++) {
-        if (answerArray[i].includes(correctLetters[i])) {
-            box1.innerHTML = '*';
-            box2.innerHTML = 'W';
-            box3.innerHTML = 'I';
-            box4.innerHTML = 'N';
-            box5.innerHTML = '!';
-            document.getElementById("guess-input").disabled = true;
-            usedLettersBox.innerHTML = '';
-        }
+
+    if ((wordPlace === word)) {
+        box1.innerHTML = '*';
+        box2.innerHTML = 'W';
+        box3.innerHTML = 'I';
+        box4.innerHTML = 'N';
+        box5.innerHTML = '!';
+        document.getElementById("guess-input").disabled = true;
+        usedLettersBox.innerHTML = '';
     }
 }
+
 
 
 
@@ -266,6 +268,7 @@ function checkLetter() {
                 correctLetters[i] = guess;
                 scoreBox.innerHTML = score += 1;
                 letterSpace();
+                return;
             }
         }
         if (found) return;
