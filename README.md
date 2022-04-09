@@ -215,7 +215,7 @@ First Time User:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 |used letters not wiping on new game | |
-
+|Opening guess correct, score not increasing | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
 
 [Back to Top](<#Table-of-Content>)
 ## Deployment
