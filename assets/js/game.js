@@ -227,7 +227,7 @@ function winGame() {
         box2.innerHTML = 'W';
         box3.innerHTML = 'I';
         box4.innerHTML = 'N';
-        box5.innerHTML = '!';
+        box5.innerHTML = '*';
         document.getElementById("guess-input").disabled = true;
         usedLettersBox.innerHTML = '';
         scoreBox.innerHTML = score += 1;
