@@ -124,11 +124,12 @@ let alphabet = [
     'z'
 ];
 
-
-
+/* I had to google a code example for the below function from a hangman game for checking the letter and placing it at
+   the exact location where the letter is located in the word and also have it place
+   underscores ntil the letter was guessed*/
 
 /** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
- * and it's position in the word
+ * and it's position in the word.
  */
 function letterSpace() {
     wordPlace = word.split('').map(letter => (correctLetters.indexOf(letter) >= 0 ? letter : " _ ")).join('');
@@ -247,11 +248,6 @@ function countDown() {
  * and then determines if the players guess is correct or incorrect.
  * It then places letter into the word display or used letters
  */
-
-/* I had to google a code example from a hangman game for checking the letter and placing it at
-   the exact location where the letter is located in the word and also have it place
-   underscores ntil the letter was guessed*/
-
 function checkLetter() {
     document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
