@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Decrypt | Game</title>
 </head>
+
 <body>
     <header>
         <div class="navbar">
             <h1>Decrypt</h1>
         </div>
     </header>
+
     <div id="game-box">
         <div class="score-box">
             <p>Score: <span id="score" max="5">0</span></p>
         </div>
-
         <div id="answer-box">
             <span id="answer"></span>
         </div>
-
-        
-
         <div class="letter-box" id="box1">-</div>
         <div class="letter-box" id="box2">-</div>
         <div class="letter-box" id="box3">-</div>
@@ -36,25 +35,29 @@
 
         <form id="form">
             <label for="guess-input"></label>
-            <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1" onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z]">
+            <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1"
+                onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z]">
 
             <!-- <button data-type="submit" id="submit-btn" class="btn">Guess!</button> -->
         </form>
-        
+
         <div class="score-box">
             <p>Attempts left: <span id="attempts">5</span></p>
         </div>
 
-        <span>
-            <i data-type="play" class="fas fa-play btn" onclick="startGame()"></i>
-        </span>
-        <span>
-            <i data-type="stop" class="fas fa-stop btn"></i>
-        </span>
+        <span><i data-type="play" class="fas fa-play btn" onclick="startGame()"></i></span>
+        <span><i data-type="stop" class="fas fa-stop btn"></i></span>
 
         <div id="used-letters-box"></div>
+        <div id="difficulty-box">
+            <ul>
+                <li>Easy</li>
+                <li>Medium</li>
+                <li>Hard</li>
+            </ul>
+        </div>
     </div>
-   
+
     <footer>
         <div class="footer"></div>
     </footer>

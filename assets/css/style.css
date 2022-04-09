@@ -118,6 +118,16 @@ border: 1px solid rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
 }
 
+#difficulty-box {
+    width: 20%;
+    height: 70px;
+    font-size: 1.2rem;
+}
+
+#difficulty-box li {
+    list-style-type: none;
+}
+
 .fas {
     display: inline-block;
     font-size: 40px;
