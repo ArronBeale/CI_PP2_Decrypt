@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', function () {
+    let buttons = document.getElementsByClassName('btn');
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            if (this.getAttribute('data-type') === 'submit') {
+
+            }
+            if (this.getAttribute('data-type') === 'play') {
+                startGame();
+            }
+            if (this.getAttribute('data-type') === 'stop') {
+                stopGame();
+            }
+        });
+    }
+
+});
+
 let words = [
     'which',
     'their',
@@ -64,7 +82,7 @@ const boxArray = [box1, box2, box3, box4, box5];
 const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
-
+const usedLettersBox = document.getElementById('used-letters-box');
 let score = 0;
 let attempts = 5;
 let word = words[Math.floor(Math.random() * words.length)];
@@ -106,23 +124,7 @@ let alphabet = [
     'z'
 ];
 
-document.addEventListener('DOMContentLoaded', function () {
-    let buttons = document.getElementsByClassName('btn');
-    for (let button of buttons) {
-        button.addEventListener('click', function () {
-            if (this.getAttribute('data-type') === 'submit') {
 
-            }
-            if (this.getAttribute('data-type') === 'play') {
-                startGame();
-            }
-            if (this.getAttribute('data-type') === 'stop') {
-                stopGame();
-            }
-        });
-    }
-
-});
 
 
 /** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
@@ -143,6 +145,7 @@ function startGame() {
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
+    word = words[Math.floor(Math.random() * words.length)];
     score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
@@ -251,7 +254,7 @@ function checkLetter() {
             }
         }
         if (found) return;
-        if (wrongLetters.indexOf(guess) < 0) {
+        if (wrongLetters.indexOf(guess) < 0 && attempts >0) {
             wrongLetters.push(guess);
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
             attemptsBox.innerHTML = attempts -= 1;
