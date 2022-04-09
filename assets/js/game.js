@@ -168,7 +168,6 @@ function startGame() {
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
     word = words[Math.floor(Math.random() * words.length)];
-    score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
@@ -232,6 +231,8 @@ function winGame() {
         box5.innerHTML = '!';
         document.getElementById("guess-input").disabled = true;
         usedLettersBox.innerHTML = '';
+        scoreBox.innerHTML = score += 1;
+        startGame();
     }
 }
 
@@ -264,9 +265,9 @@ function checkLetter() {
         guess = event.key.toLowerCase();
         let found = false;
         for (i = 0; i < word.length; i++) {
-            if (guess === word[i]) {
+            if (guess === word[i] && score < 5) {
                 correctLetters[i] = guess;
-                scoreBox.innerHTML = score += 1;
+                
                 letterSpace();
                 return;
             }
