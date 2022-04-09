@@ -124,6 +124,23 @@ let alphabet = [
     'z'
 ];
 
+form.addEventListener('keyup', function (event) {
+    event.preventDefault();
+    document.getElementById('guess-input').focus();
+    letterSpace();
+    checkLetter();
+    form.reset();
+
+    if (answerArray.includes(guess)) {
+        console.log('match');
+        isCorrect = true;
+
+    } else {
+        console.log('not a match');
+
+    }
+});
+
 /* I had to google a code example for the below function from a hangman game for checking the letter and placing it at
    the exact location where the letter is located in the word and also have it place
    underscores ntil the letter was guessed*/
@@ -151,6 +168,8 @@ function startGame() {
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
+    wrongLetters = [];
+    usedLettersBox.innerHTML = '';
 
     answerArray = [];
     letterSpace();
@@ -189,6 +208,8 @@ function stopGame() {
     attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
+    wrongLetters = [];
+    usedLettersBox.innerHTML = '';
     letterSpace();
     box1.innerHTML = 'E';
     box2.innerHTML = 'N';
@@ -197,26 +218,6 @@ function stopGame() {
     box5.innerHTML = 'D';
 }
 
-form.addEventListener('keyup', function (event) {
-    event.preventDefault();
-    document.getElementById('guess-input').focus();
-    letterSpace();
-    checkLetter();
-    form.reset();
-
-
-    if (answerArray.includes(guess)) {
-        console.log('match');
-        isCorrect = true;
-
-    } else {
-        console.log('not a match');
-
-    }
-
-});
-
-
 function winGame() {
     box1.innerHTML = '*';
     box2.innerHTML = 'W';
@@ -224,6 +225,7 @@ function winGame() {
     box4.innerHTML = 'N';
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
+    usedLettersBox.innerHTML = '';
 }
 
 
@@ -238,6 +240,7 @@ function loseGame() {
     box4.innerHTML = 'E';
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
+    usedLettersBox.innerHTML = '';
 }
 
 function countDown() {
@@ -265,7 +268,7 @@ function checkLetter() {
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
             attemptsBox.innerHTML = attempts -= 1;
         }
-        if (attempts == 0) {
+        if (attempts == 0 && score < 5) {
             loseGame();
         }
     };
