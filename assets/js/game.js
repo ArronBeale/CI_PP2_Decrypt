@@ -68,33 +68,6 @@ let words = [
     'above'
 ];
 
-const letterBoxes = document.getElementsByClassName('letter-box');
-const submitBtn = document.getElementById('submit-btn');
-const playBtn = document.getElementById('fa-play');
-const stopBtn = document.getElementById('fa-stop');
-const box1 = document.getElementById('box1');
-const box2 = document.getElementById('box2');
-const box3 = document.getElementById('box3');
-const box4 = document.getElementById('box4');
-const box5 = document.getElementById('box5');
-const form = document.querySelector('#form');
-const boxArray = [box1, box2, box3, box4, box5];
-const usedLetters = [];
-const scoreBox = document.querySelector('#score');
-const attemptsBox = document.querySelector('#attempts');
-const usedLettersBox = document.getElementById('used-letters-box');
-const answerBox = document.getElementById('answer-box');
-let score = 0;
-let attempts = 5;
-let word = words[Math.floor(Math.random() * words.length)];
-let answerArray = [];
-let correctLetters = [];
-let wrongLetters = [];
-let guess = '';
-let wordPlace = null;
-let isCorrect;
-
-
 let alphabet = [
     'a',
     'b',
@@ -123,6 +96,39 @@ let alphabet = [
     'y',
     'z'
 ];
+
+const letterBoxes = document.getElementsByClassName('letter-box');
+const submitBtn = document.getElementById('submit-btn');
+const playBtn = document.getElementById('fa-play');
+const stopBtn = document.getElementById('fa-stop');
+const box1 = document.getElementById('box1');
+const box2 = document.getElementById('box2');
+const box3 = document.getElementById('box3');
+const box4 = document.getElementById('box4');
+const box5 = document.getElementById('box5');
+const form = document.querySelector('#form');
+const boxArray = [box1, box2, box3, box4, box5];
+const usedLetters = [];
+const scoreBox = document.querySelector('#score');
+const attemptsBox = document.querySelector('#attempts');
+const usedLettersBox = document.getElementById('used-letters-box');
+const answerBox = document.getElementById('answer-box');
+const easyBtn = document.getElementById('btn-easy');
+const mediumBtn = document.getElementById('btn-medium');
+const hardBtn = document.getElementById('btn-hard');
+
+let score = 0;
+let attempts = 5;
+let word = words[Math.floor(Math.random() * words.length)];
+let answerArray = [];
+let correctLetters = [];
+let wrongLetters = [];
+let guess = '';
+let wordPlace = null;
+let isCorrect;
+
+
+
 
 form.addEventListener('keyup', function (event) {
     event.preventDefault();
