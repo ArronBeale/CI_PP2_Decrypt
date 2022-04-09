@@ -183,7 +183,7 @@ function stopGame() {
     document.getElementById('guess-input').focus();
     document.getElementById("answer").innerHTML = '';
     document.getElementById("guess-input").disabled = true;
-    
+
     score = 0;
     attempts = 5;
     scoreBox.innerHTML = score;
@@ -207,21 +207,25 @@ form.addEventListener('keyup', function (event) {
     if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
-        if (score < 5) {
-            scoreBox.innerHTML = score += 1;
-        }
 
     } else {
         console.log('not a match');
-        
+
     }
 
 });
 
 
-function win() {
-
+function winGame() {
+    box1.innerHTML = '*';
+    box2.innerHTML = 'W';
+    box3.innerHTML = 'I';
+    box4.innerHTML = 'N';
+    box5.innerHTML = '!';
+    document.getElementById("guess-input").disabled = true;
 }
+
+
 
 /** this function will activate once lose conditions are met, it
  * will then cause the lose screen to display to the player.
@@ -250,11 +254,12 @@ function checkLetter() {
         for (i = 0; i < word.length; i++) {
             if (guess === word[i]) {
                 correctLetters[i] = guess;
+                scoreBox.innerHTML = score += 1;
                 letterSpace();
             }
         }
         if (found) return;
-        if (wrongLetters.indexOf(guess) < 0 && attempts >0) {
+        if (wrongLetters.indexOf(guess) < 0 && attempts > 0) {
             wrongLetters.push(guess);
             document.getElementById("used-letters-box").innerHTML = wrongLetters.join('');
             attemptsBox.innerHTML = attempts -= 1;
@@ -262,6 +267,7 @@ function checkLetter() {
         if (attempts == 0) {
             loseGame();
         }
+
     };
 }
 
