@@ -8,7 +8,11 @@
 .navbar {
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 166, 0)
+    background-color: black;
+}
+
+.navbar h1 {
+    color: white;
 }
 
 body {
@@ -28,15 +32,17 @@ h1 {
 }
 
 #game-box {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
     height: 100vh;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(172, 172, 172, 0.9);
 }
 
 .score-box {
     padding-top: 50px;
-    text-decoration: underline;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
 #answer-box {
@@ -51,6 +57,7 @@ h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 1.9rem;
+    border: 1px solid rgb(0, 0, 0);
     
 }
 
@@ -64,6 +71,7 @@ border-radius: 15px;
 text-align: center;
 font-weight: bolder;
 font-size: 1.8rem;
+border: 1px solid rgb(0, 0, 0);
 }
 
 #guess-input {
@@ -78,6 +86,7 @@ font-size: 1.8rem;
     font-weight: bolder;
     font-size: 1.8rem;
     text-align: center;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #submit-btn {
@@ -94,12 +103,6 @@ font-size: 1.8rem;
     font-size: larger;
 }
 
-#attempts-left {
-    display: block;
-    margin-top: 10px;
-    font-size: 1.3rem;
-}
-
 #used-letters-box {
     display: block;
     height: 60px;
@@ -112,6 +115,7 @@ font-size: 1.8rem;
     text-align: center;
     font-weight: bolder;
     font-size: 1.9rem;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .fas {
@@ -121,11 +125,11 @@ font-size: 1.8rem;
 }
 
 .fas:hover {
-    color: chartreuse;
+    color: rgb(85, 212, 53);
 }
 
-.footer-box {
+.footer {
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 166, 0);
+    background-color: black;
 }
