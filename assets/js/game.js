@@ -128,27 +128,20 @@ let wordPlace = null;
 let isCorrect;
 
 
-
-
+/* this event listener fires alot of the functions once the user inputs a guess */
 form.addEventListener('keyup', function (event) {
     event.preventDefault();
     document.getElementById('guess-input').focus();
     letterSpace();
     checkLetter();
     form.reset();
-
+    winGame();
 
     if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
-
-
     } else {
         console.log('not a match');
-
-    }
-    if (wordPlace === word) {
-        winGame();
     }
 });
 
@@ -162,7 +155,6 @@ function letterSpace() {
     wordPlace = word.split('').map(letter => (correctLetters.indexOf(letter) >= 0 ? letter : " _ ")).join('');
     document.getElementById('answer').innerHTML = wordPlace;
 }
-
 
 /** Starts the game. Player can use it to cycle new games and refresh the word to guess, 
  * resets the score to 0 and attempts to 5.
@@ -226,6 +218,9 @@ function stopGame() {
     box5.innerHTML = 'D';
 }
 
+/** this function is for when a player guesses the word correctly, it displays win in the letter box
+ * and increases their score and clears the used letters displayed for the next round
+ */
 function winGame() {
 
     if ((wordPlace === word)) {
@@ -239,9 +234,6 @@ function winGame() {
         scoreBox.innerHTML = score += 1;
     }
 }
-
-
-
 
 /** this function will activate once lose conditions are met, it
  * will then cause the lose screen to display to the player.
