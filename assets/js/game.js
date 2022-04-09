@@ -130,20 +130,22 @@ form.addEventListener('keyup', function (event) {
     letterSpace();
     checkLetter();
     form.reset();
+    
 
     if (answerArray.includes(guess)) {
         console.log('match');
         isCorrect = true;
 
+
     } else {
         console.log('not a match');
 
     }
+    if ()
 });
 
-/* I had to google a code example for the below function from a hangman game for checking the letter and placing it at
-   the exact location where the letter is located in the word and also have it place
-   underscores ntil the letter was guessed*/
+/* I had to google a code example for the below function from a hangman game for placing an underscore that would then 
+allow it to change to the correct letter, the underscores then act as a hint when letters begin to fill them.*/
 
 /** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
  * and it's position in the word.
@@ -219,13 +221,17 @@ function stopGame() {
 }
 
 function winGame() {
-    box1.innerHTML = '*';
-    box2.innerHTML = 'W';
-    box3.innerHTML = 'I';
-    box4.innerHTML = 'N';
-    box5.innerHTML = '!';
-    document.getElementById("guess-input").disabled = true;
-    usedLettersBox.innerHTML = '';
+    for (i = 0; i < answerArray.length; i++) {
+        if (answerArray[i].includes(correctLetters[i])) {
+            box1.innerHTML = '*';
+            box2.innerHTML = 'W';
+            box3.innerHTML = 'I';
+            box4.innerHTML = 'N';
+            box5.innerHTML = '!';
+            document.getElementById("guess-input").disabled = true;
+            usedLettersBox.innerHTML = '';
+        }
+    }
 }
 
 
