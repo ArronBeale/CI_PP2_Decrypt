@@ -143,7 +143,11 @@ function easyMode() {
     attempts = 10;
     attemptsBox.innerHTML = attempts;
     easyBtn.style.fontWeight = "bold";
-    easyBtn.style.color = "red";
+    mediumBtn.style.fontWeight = "none";
+    hardBtn.style.fontWeight = "none";
+    easyBtn.style.textDecoration = "underline";
+    mediumBtn.style.textDecoration = "none";
+    hardBtn.style.textDecoration = "none";
 }
 
 /* medium mode will give player 8 attempts */
@@ -152,6 +156,12 @@ function mediumMode() {
     easy, hard = false;
     attempts = 8;
     attemptsBox.innerHTML = attempts;
+    easyBtn.style.fontWeight = "none";
+    mediumBtn.style.fontWeight = "bold";
+    hardBtn.style.fontWeight = "none";
+    mediumBtn.style.textDecoration = "underline";
+    easyBtn.style.textDecoration = "none";
+    hardBtn.style.textDecoration = "none";
 }
 
 /* hard mode will give player 5 attempts */
@@ -160,6 +170,12 @@ function hardMode() {
     easy, medium = false;
     attempts = 5;
     attemptsBox.innerHTML = attempts;
+    easyBtn.style.fontWeight = "none";
+    mediumBtn.style.fontWeight = "none";
+    hardBtn.style.fontWeight = "bold";
+    hardBtn.style.textDecoration = "underline";
+    mediumBtn.style.textDecoration = "none";
+    easyBtn.style.textDecoration = "none";
 }
 
 function checkMode() {
