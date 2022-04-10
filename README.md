@@ -39,7 +39,7 @@ The goal of this project is to create a challenging and fun word guessing game.
 
 ### User Goals
 - To play a chance puzzle where you guess the word.
-- To have a limited number of attempts alongside a countdown determined by difficulty level.
+- To have a limited number of attempts determined by difficulty level.
 - To be able to chhose a difficulty level.
 - Replayable, fun and possibly addictive.
 
@@ -216,7 +216,7 @@ First Time User:
 | ----------- | ----------- |
 |used letters not wiping on new game | |
 |Opening guess correct, score not increasing | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
-
+|Attempts not resetting after game | I had to add a function to check which mode was true and it would reset attempts accordingly|
 [Back to Top](<#Table-of-Content>)
 ## Deployment
 The website was deployed to GitHub Pages via the following:
