@@ -104,15 +104,20 @@ let alphabet = [
     'z'
 ];
 
-const letterBoxes = document.getElementsByClassName('letter-box');
 const submitBtn = document.getElementById('submit-btn');
 const playBtn = document.getElementById('fa-play');
 const stopBtn = document.getElementById('fa-stop');
+const easyBtn = document.getElementById('btn-easy');
+const mediumBtn = document.getElementById('btn-medium');
+const hardBtn = document.getElementById('btn-hard');
+
+const letterBoxes = document.getElementsByClassName('letter-box');
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
 const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
+
 const form = document.querySelector('#form');
 const boxArray = [box1, box2, box3, box4, box5];
 const usedLetters = [];
@@ -120,9 +125,7 @@ const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
-const easyBtn = document.getElementById('btn-easy');
-const mediumBtn = document.getElementById('btn-medium');
-const hardBtn = document.getElementById('btn-hard');
+
 
 let score = 0;
 let attempts;
@@ -138,6 +141,7 @@ let hard = false;
 
 /* easy mode will give player 10 attempts */
 function easyMode() {
+
     easy = true;
     medium, hard = false;
     attempts = 10;
@@ -152,6 +156,7 @@ function easyMode() {
 
 /* medium mode will give player 8 attempts */
 function mediumMode() {
+
     medium = true;
     easy, hard = false;
     attempts = 8;
@@ -166,6 +171,7 @@ function mediumMode() {
 
 /* hard mode will give player 5 attempts */
 function hardMode() {
+
     hard = true;
     easy, medium = false;
     attempts = 5;
@@ -179,6 +185,7 @@ function hardMode() {
 }
 
 function checkMode() {
+
     if (easy === true) {
         easyMode();
     }
@@ -213,6 +220,7 @@ allow it to change to the correct letter, the underscores then act as a hint whe
  * and it's position in the word.
  */
 function letterSpace() {
+
     wordPlace = word.split('').map(letter => (correctLetters.indexOf(letter) >= 0 ? letter : " _ ")).join('');
     document.getElementById('answer').innerHTML = wordPlace;
 }
@@ -223,6 +231,7 @@ function letterSpace() {
  * guesses without fist clicking on it.
  */
 function startGame() {
+
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
@@ -231,6 +240,7 @@ function startGame() {
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
+    document.getElementById('guess-input').focus();
     answerArray = [];
 
     checkMode()
@@ -261,6 +271,7 @@ function startGame() {
  * It will change the text in the letter boxes to say ended.
  */
 function stopGame() {
+
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("answer").innerHTML = '';
@@ -285,22 +296,22 @@ function stopGame() {
  */
 function winGame() {
 
-    if ((wordPlace === word)) {
-        box1.innerHTML = '*';
-        box2.innerHTML = 'W';
-        box3.innerHTML = 'I';
-        box4.innerHTML = 'N';
-        box5.innerHTML = '*';
-        document.getElementById("guess-input").disabled = true;
-        usedLettersBox.innerHTML = '';
-        scoreBox.innerHTML = score += 1;
-    }
+    box1.innerHTML = '*';
+    box2.innerHTML = 'W';
+    box3.innerHTML = 'I';
+    box4.innerHTML = 'N';
+    box5.innerHTML = '*';
+    document.getElementById("guess-input").disabled = true;
+    usedLettersBox.innerHTML = '';
+    scoreBox.innerHTML = score += 1;
+    
 }
 
 /** this function will activate once lose conditions are met, it
  * will then cause the lose screen to display to the player.
  */
 function loseGame() {
+
     score = 0;
     box1.innerHTML = 'L';
     box2.innerHTML = 'O';
@@ -319,6 +330,7 @@ function loseGame() {
  * It then places letter into the word display or used letters
  */
 function checkLetter() {
+
     document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
         let found = false;
@@ -328,6 +340,9 @@ function checkLetter() {
 
                 letterSpace();
                 return;
+            }
+            if (wordPlace === word) {
+                winGame();
             }
         }
         if (found) return;
@@ -343,3 +358,4 @@ function checkLetter() {
 }
 
 letterSpace();
+winGame();
