@@ -127,6 +127,23 @@ let guess = '';
 let wordPlace = null;
 let isCorrect;
 
+/* easy mode will give player 10 attempts */
+function easyMode (event) {
+
+}
+easyBtn.addEventListener('click', easyMode);
+
+/* easy mode will give player 8 attempts */
+function mediumMode (event) {
+
+}
+easyBtn.addEventListener('click', mediumMode);
+
+/* easy mode will give player 5 attempts */
+function hardMode (event) {
+
+}
+easyBtn.addEventListener('click', hardMode);
 
 /* this event listener fires alot of the functions once the user inputs a guess */
 form.addEventListener('keyup', function (event) {
