@@ -120,7 +120,7 @@ const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
-const easyBtn = document.getElementById('easy-btn');
+const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
 
@@ -138,6 +138,7 @@ let isCorrect;
 function easyMode() {
     attempts = 10;
     easyBtn.style.fontWeight = "bold";
+    easyBtn.style.color = "red";
 }
 
 /* medium mode will give player 8 attempts */
@@ -156,12 +157,10 @@ form.addEventListener('keyup', function (event) {
     document.getElementById('guess-input').focus();
     letterSpace();
     checkLetter();
-    form.reset();
     winGame();
 
     if (answerArray.includes(guess)) {
         console.log('match');
-        isCorrect = true;
     } else {
         console.log('not a match');
     }
@@ -270,10 +269,6 @@ function loseGame() {
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
     setTimeout(function(){ stopGame(); }, 3000);
-}
-
-function countDown() {
-
 }
 
 /** this function activates on keyup of the players input
