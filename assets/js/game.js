@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByClassName('btn');
     for (let button of buttons) {
         button.addEventListener('click', function () {
-            
+
             if (this.getAttribute('data-type') === 'play') {
                 startGame();
             }
@@ -125,30 +125,53 @@ const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
 
 let score = 0;
-let attempts = 5;
+let attempts;
 let word = words[Math.floor(Math.random() * words.length)];
 let answerArray = [];
 let correctLetters = [];
 let wrongLetters = [];
 let guess = '';
 let wordPlace = null;
-let isCorrect;
+let easy = false;
+let medium = true;
+let hard = false;
 
 /* easy mode will give player 10 attempts */
 function easyMode() {
+    easy = true;
+    medium, hard = false;
     attempts = 10;
+    attemptsBox.innerHTML = attempts;
     easyBtn.style.fontWeight = "bold";
     easyBtn.style.color = "red";
 }
 
 /* medium mode will give player 8 attempts */
 function mediumMode() {
+    medium = true;
+    easy, hard = false;
     attempts = 8;
+    attemptsBox.innerHTML = attempts;
 }
 
 /* hard mode will give player 5 attempts */
 function hardMode() {
+    hard = true;
+    easy, medium = false;
     attempts = 5;
+    attemptsBox.innerHTML = attempts;
+}
+
+function checkMode() {
+    if (easy === true) {
+        easyMode();
+    }
+    if (medium === true) {
+        mediumMode();
+    }
+    if (hard === true) {
+        hardMode();
+    }
 }
 
 /* this event listener fires alot of the functions once the user inputs a guess */
@@ -158,6 +181,7 @@ form.addEventListener('keyup', function (event) {
     letterSpace();
     checkLetter();
     winGame();
+    form.reset();
 
     if (answerArray.includes(guess)) {
         console.log('match');
@@ -187,13 +211,13 @@ function startGame() {
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
     word = words[Math.floor(Math.random() * words.length)];
-    attempts = 5;
     scoreBox.innerHTML = score;
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
-
     answerArray = [];
+
+    checkMode()
     letterSpace();
 
     for (let i = 0; i < words.length; i++) {
@@ -228,6 +252,7 @@ function stopGame() {
 
     score = 0;
     scoreBox.innerHTML = score;
+    checkMode();
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
@@ -268,7 +293,9 @@ function loseGame() {
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
-    setTimeout(function(){ stopGame(); }, 3000);
+    setTimeout(function () {
+        stopGame();
+    }, 3000);
 }
 
 /** this function activates on keyup of the players input
@@ -282,7 +309,7 @@ function checkLetter() {
         for (i = 0; i < word.length; i++) {
             if (guess === word[i] && score < 5) {
                 correctLetters[i] = guess;
-                
+
                 letterSpace();
                 return;
             }
