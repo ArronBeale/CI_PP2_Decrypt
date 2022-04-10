@@ -127,6 +127,11 @@ border: 1px solid rgb(0, 0, 0);
 
 #difficulty-box li {
     list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.btn-mode:hover {
+    font-weight: bolder;
 }
 
 .fas {

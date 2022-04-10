@@ -2,14 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByClassName('btn');
     for (let button of buttons) {
         button.addEventListener('click', function () {
-            if (this.getAttribute('data-type') === 'submit') {
-
-            }
+            
             if (this.getAttribute('data-type') === 'play') {
                 startGame();
             }
             if (this.getAttribute('data-type') === 'stop') {
                 stopGame();
+            }
+            if (this.getAttribute('data-type') === 'easy') {
+                easyMode();
+            }
+            if (this.getAttribute('data-type') === 'medium') {
+                mediumMode();
+            }
+            if (this.getAttribute('data-type') === 'hard') {
+                hardMode();
             }
         });
     }
@@ -113,7 +120,7 @@ const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
-const easyBtn = document.getElementById('btn-easy');
+const easyBtn = document.getElementById('easy-btn');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
 
@@ -128,22 +135,20 @@ let wordPlace = null;
 let isCorrect;
 
 /* easy mode will give player 10 attempts */
-function easyMode (event) {
-
+function easyMode() {
+    attempts = 10;
+    easyBtn.style.fontWeight = "bold";
 }
-easyBtn.addEventListener('click', easyMode);
 
-/* easy mode will give player 8 attempts */
-function mediumMode (event) {
-
+/* medium mode will give player 8 attempts */
+function mediumMode() {
+    attempts = 8;
 }
-easyBtn.addEventListener('click', mediumMode);
 
-/* easy mode will give player 5 attempts */
-function hardMode (event) {
-
+/* hard mode will give player 5 attempts */
+function hardMode() {
+    attempts = 5;
 }
-easyBtn.addEventListener('click', hardMode);
 
 /* this event listener fires alot of the functions once the user inputs a guess */
 form.addEventListener('keyup', function (event) {
