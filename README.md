@@ -217,6 +217,7 @@ First Time User:
 |used letters not wiping on new game | |
 |Opening guess correct, score not increasing | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
 |Attempts not resetting after game | I had to add a function to check which mode was true and it would reset attempts accordingly|
+|Correct letters from previous game carrying to new game | Upon win I set startGame function to be called twice which wipes the letters carrying over. |
 [Back to Top](<#Table-of-Content>)
 ## Deployment
 The website was deployed to GitHub Pages via the following:
