@@ -104,29 +104,18 @@ let alphabet = [
     'z'
 ];
 
-const submitBtn = document.getElementById('submit-btn');
-const playBtn = document.getElementById('fa-play');
-const stopBtn = document.getElementById('fa-stop');
 const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
-
-const letterBoxes = document.getElementsByClassName('letter-box');
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
 const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
-
 const form = document.querySelector('#form');
-const boxArray = [box1, box2, box3, box4, box5];
-const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
-const answerBox = document.getElementById('answer-box');
-
-
 let score = 0;
 let attempts;
 let word = words[Math.floor(Math.random() * words.length)];
@@ -138,8 +127,6 @@ let wordPlace = null;
 let easy = false;
 let medium = true;
 let hard = false;
-let started;
-let ended;
 
 /* easy mode will give player 10 attempts */
 function easyMode() {
@@ -179,7 +166,7 @@ function mediumMode() {
 function hardMode() {
 
     hard = true;
-    easy = false; 
+    easy = false;
     medium = false;
     attempts = 5;
     attemptsBox.innerHTML = attempts;
@@ -243,13 +230,12 @@ function startGame() {
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
     word = words[Math.floor(Math.random() * words.length)];
-    scoreBox.innerHTML = score;
-    // attemptsBox.innerHTML = attempts;
+    // scoreBox.innerHTML = score;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
     document.getElementById('guess-input').focus();
     answerArray = [];
-    
+
     checkMode();
     letterSpace();
 
@@ -286,7 +272,6 @@ function stopGame() {
 
     score = 0;
     scoreBox.innerHTML = score;
-    // checkMode();
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
@@ -310,8 +295,15 @@ function winGame() {
     box5.innerHTML = '*';
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
-    scoreBox.innerHTML = score += 1;
-    
+    scoreBox.innerHTML = score++;
+
+    setTimeout(function () {
+        startGame();
+    }, 1000);
+    setTimeout(function () {
+        startGame();
+    }, 1000);
+
 }
 
 /** this function will activate once lose conditions are met, it
@@ -328,8 +320,11 @@ function loseGame() {
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
     setTimeout(function () {
-        stopGame();
-    }, 3000);
+        startGame();
+    }, 1000);
+    setTimeout(function () {
+        startGame();
+    }, 1000);
 }
 
 /** this function activates on keyup of the players input
@@ -348,17 +343,12 @@ function checkLetter() {
                 letterSpace();
                 return;
             }
-            /* i had to run startGame function twice after winGame as i have a bug that 
+            /* I had to run startGame function twice after winGame as i have a bug that 
             carries over a correct letter to new game.
             if i run startGame twice it wipes the bug instantly*/
             if (word == wordPlace) {
                 winGame();
-                setTimeout(function () {
-                    startGame();
-                }, 1000);
-                setTimeout(function () {
-                    startGame();
-                }, 1000);
+
             }
         }
         if (found) return;
