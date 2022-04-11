@@ -138,50 +138,58 @@ let wordPlace = null;
 let easy = false;
 let medium = true;
 let hard = false;
+let started;
+let ended;
 
 /* easy mode will give player 10 attempts */
 function easyMode() {
 
     easy = true;
-    medium, hard = false;
+    medium = false;
+    hard = false;
     attempts = 10;
     attemptsBox.innerHTML = attempts;
     easyBtn.style.fontWeight = "bold";
-    mediumBtn.style.fontWeight = "none";
-    hardBtn.style.fontWeight = "none";
+    mediumBtn.style.fontWeight = "";
+    hardBtn.style.fontWeight = "";
     easyBtn.style.textDecoration = "underline";
     mediumBtn.style.textDecoration = "none";
     hardBtn.style.textDecoration = "none";
+    document.getElementById('guess-input').focus();
 }
 
 /* medium mode will give player 8 attempts */
 function mediumMode() {
 
     medium = true;
-    easy, hard = false;
+    easy = false;
+    hard = false;
     attempts = 8;
     attemptsBox.innerHTML = attempts;
-    easyBtn.style.fontWeight = "none";
+    easyBtn.style.fontWeight = "";
     mediumBtn.style.fontWeight = "bold";
-    hardBtn.style.fontWeight = "none";
+    hardBtn.style.fontWeight = "";
     mediumBtn.style.textDecoration = "underline";
     easyBtn.style.textDecoration = "none";
     hardBtn.style.textDecoration = "none";
+    document.getElementById('guess-input').focus();
 }
 
 /* hard mode will give player 5 attempts */
 function hardMode() {
 
     hard = true;
-    easy, medium = false;
+    easy = false; 
+    medium = false;
     attempts = 5;
     attemptsBox.innerHTML = attempts;
-    easyBtn.style.fontWeight = "none";
-    mediumBtn.style.fontWeight = "none";
+    easyBtn.style.fontWeight = "";
+    mediumBtn.style.fontWeight = "";
     hardBtn.style.fontWeight = "bold";
     hardBtn.style.textDecoration = "underline";
     mediumBtn.style.textDecoration = "none";
     easyBtn.style.textDecoration = "none";
+    document.getElementById('guess-input').focus();
 }
 
 function checkMode() {
@@ -203,7 +211,6 @@ form.addEventListener('keyup', function (event) {
     document.getElementById('guess-input').focus();
     letterSpace();
     checkLetter();
-    winGame();
     form.reset();
 
     if (answerArray.includes(guess)) {
@@ -237,13 +244,13 @@ function startGame() {
     document.getElementById("guess-input").disabled = false;
     word = words[Math.floor(Math.random() * words.length)];
     scoreBox.innerHTML = score;
-    attemptsBox.innerHTML = attempts;
+    // attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
     document.getElementById('guess-input').focus();
     answerArray = [];
-
-    checkMode()
+    
+    checkMode();
     letterSpace();
 
     for (let i = 0; i < words.length; i++) {
@@ -279,7 +286,7 @@ function stopGame() {
 
     score = 0;
     scoreBox.innerHTML = score;
-    checkMode();
+    // checkMode();
     attemptsBox.innerHTML = attempts;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
@@ -334,15 +341,24 @@ function checkLetter() {
     document.onkeyup = function (event) {
         guess = event.key.toLowerCase();
         let found = false;
-        for (i = 0; i < word.length; i++) {
-            if (guess === word[i] && score < 5) {
+        for (let i = 0; i < word.length; i++) {
+            if (guess === word[i]) {
                 correctLetters[i] = guess;
 
                 letterSpace();
                 return;
             }
-            if (wordPlace === word) {
+            /* i had to run startGame function twice after winGame as i have a bug that 
+            carries over a correct letter to new game.
+            if i run startGame twice it wipes the bug instantly*/
+            if (word == wordPlace) {
                 winGame();
+                setTimeout(function () {
+                    startGame();
+                }, 1000);
+                setTimeout(function () {
+                    startGame();
+                }, 1000);
             }
         }
         if (found) return;
@@ -358,4 +374,3 @@ function checkLetter() {
 }
 
 letterSpace();
-winGame();
