@@ -1,6 +1,11 @@
+/* this adds event listeners to all the btn class and gives them 
+their specific funtion as soon as the DOM finishes loading.
+*/
 document.addEventListener('DOMContentLoaded', function () {
+
     let buttons = document.getElementsByClassName('btn');
     for (let button of buttons) {
+        
         button.addEventListener('click', function () {
 
             if (this.getAttribute('data-type') === 'play') {
@@ -104,18 +109,29 @@ let alphabet = [
     'z'
 ];
 
+const submitBtn = document.getElementById('submit-btn');
+const playBtn = document.getElementById('fa-play');
+const stopBtn = document.getElementById('fa-stop');
 const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
+
+const letterBoxes = document.getElementsByClassName('letter-box');
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
 const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
+
 const form = document.querySelector('#form');
+const boxArray = [box1, box2, box3, box4, box5];
+const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
+const answerBox = document.getElementById('answer-box');
+
+
 let score = 0;
 let attempts;
 let word = words[Math.floor(Math.random() * words.length)];
@@ -230,7 +246,6 @@ function startGame() {
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
     word = words[Math.floor(Math.random() * words.length)];
-    // scoreBox.innerHTML = score;
     wrongLetters = [];
     usedLettersBox.innerHTML = '';
     document.getElementById('guess-input').focus();
@@ -310,8 +325,8 @@ function winGame() {
  * will then cause the lose screen to display to the player.
  */
 function loseGame() {
-
     score = 0;
+    scoreBox.innerHTML = score;
     box1.innerHTML = 'L';
     box2.innerHTML = 'O';
     box3.innerHTML = 'S';
