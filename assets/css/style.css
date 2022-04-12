@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.navbar {
+.nav-box {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: rgb(151, 137, 137);
 }
 
-.navbar h1 {
+.nav-box h1 {
     color: white;
+}
+
+.nav-icon-box {
+    display: flex;
 }
 
 body {
@@ -34,7 +43,6 @@ h1 {
 
 /* modal styles for welcome screen for when player arrives for first time */
 .backdrop {
-    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;
@@ -83,7 +91,7 @@ h1 {
 #game-box {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 30%;
     height: 100vh;
     background-color: rgba(172, 172, 172, 0.9);
 }
@@ -99,6 +107,7 @@ h1 {
     height: 60px;
     width: 220px;
     background-color: white;
+    padding-top: 5px;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -115,6 +124,7 @@ height: 50px;
 width: 50px;
 background-color: rgb(85, 212, 53);
 margin-top: 20px;
+padding-top: 5px;
 border-radius: 15px;
 text-align: center;
 font-weight: bolder;
@@ -155,6 +165,7 @@ border: 1px solid rgb(0, 0, 0);
     display: block;
     height: 60px;
     width: 220px;
+    padding-top: 5px;
     background-color: white;
     margin: 10px;
     margin-left: auto;
@@ -172,6 +183,7 @@ border: 1px solid rgb(0, 0, 0);
     padding-left: 10px;
     width: 20%;
     height: 70px;
+    font-weight: bolder;
 }
 
 #difficulty-box li {
@@ -202,6 +214,15 @@ border: 1px solid rgb(0, 0, 0);
 
 /* Media query for phones*/
 @media screen and (max-width: 320px) {
+
+    #game-box {
+        width: 70%;
+        height: 100vh;
+    }
+
+    .score-box {
+        padding-top: 10px;
+    }
 
     .fas {
         display: inline-block;
