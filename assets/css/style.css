@@ -32,8 +32,7 @@ h1 {
     
 }
 
-/* modal */
-
+/* modal styles for welcome screen for when player arrives for first time */
 .backdrop {
     /* display: none; */
     position: fixed;
@@ -45,8 +44,8 @@ h1 {
     position: fixed;
     background: rgb(0, 0, 0, 0.5);
     text-align: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     transition: visibility 0s, opacity 0.5s;
     visibility: visible;
@@ -59,12 +58,10 @@ h1 {
 }
 
 #welcome-box {
-    /* display: none; */
-    width: 50%;
+    width: 70%;
     font-size: 1.4rem;
-    margin-left: 0 auto;
+    /* margin-left: 0 auto; */
     background: white(172, 172, 172, 0.9);
-    
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -81,10 +78,12 @@ h1 {
     color: rgb(85, 212, 53);
 }
 
+
+/* the following styles are for within the game area */
 #game-box {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     background-color: rgba(172, 172, 172, 0.9);
 }
@@ -169,6 +168,8 @@ border: 1px solid rgb(0, 0, 0);
 }
 
 #difficulty-box {
+    text-align: left;
+    padding-left: 10px;
     width: 20%;
     height: 70px;
     font-size: 1.2rem;
@@ -181,7 +182,7 @@ border: 1px solid rgb(0, 0, 0);
 
 .btn-mode:hover {
     font-weight: bolder;
-    color: purple;
+    color: white;
 }
 
 .fas {
@@ -199,3 +200,18 @@ border: 1px solid rgb(0, 0, 0);
     height: 50px;
     background-color: black;
 }
+
+/* Media query for phones*/
+@media screen and (max-width: 1200px) {
+
+};
+
+/* Media query for talets*/
+@media screen and (max-width: 1200px) {
+
+};
+
+/* Media query for laptops and larger tablets*/
+@media screen and (max-width: 1200px) {
+
+};
