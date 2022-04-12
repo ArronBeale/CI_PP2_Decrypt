@@ -40,7 +40,7 @@ a {
 
 body {
     text-align: center;
-    background-image: url(../images/background-image.jpg);
+    background-image: url(https://raw.githubusercontent.com/ArronBeale/CI_PP2_Decrypt/main/assets/images/background-image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
