@@ -107,7 +107,6 @@ h1 {
     font-weight: bolder;
     font-size: 1.9rem;
     border: 1px solid rgb(0, 0, 0);
-    
 }
 
 .letter-box {
@@ -168,11 +167,11 @@ border: 1px solid rgb(0, 0, 0);
 }
 
 #difficulty-box {
+    margin-top: 30px;
     text-align: left;
     padding-left: 10px;
     width: 20%;
     height: 70px;
-    font-size: 1.2rem;
 }
 
 #difficulty-box li {
@@ -202,7 +201,86 @@ border: 1px solid rgb(0, 0, 0);
 }
 
 /* Media query for phones*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 320px) {
+
+    .fas {
+        display: inline-block;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    #answer-box {
+        display: block;
+        height: 40px;
+        width: 130px;
+        background-color: white;
+        margin-top: 25px;
+        padding-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    .letter-box {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: rgb(85, 212, 53);
+        margin-top: 20px;
+        border-radius: 15px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        border: 1px solid rgb(0, 0, 0);
+        padding-top: 5px;
+        }
+
+        #guess-input {
+            display: block;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        #used-letters-box {
+            display: block;
+            height: 40px;
+            width: 130px;
+            background-color: white;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        #difficulty-box {
+            margin-top: 30px;
+            text-align: left;
+            padding-left: 10px;
+            width: 20%;
+            height: 70px;
+        }
+        
+        #difficulty-box li {
+            list-style-type: none;
+            font-size: 1.2rem;
+        }
 
 };
 
