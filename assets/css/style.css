@@ -1,3 +1,4 @@
+/* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
@@ -10,7 +11,7 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
     width: 100%;
@@ -18,31 +19,31 @@ header {
     background-color: black;
 }
 
+header h1 {
+    margin-right: auto;
+    color: white;
+}
+
 .nav-links {
     list-style: none;
 }
 
-.nav-links li, a {
+.nav-links li,
+a {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
 }
 
-header h1 {
-    color: white;
-}
-
-
-
 body {
     text-align: center;
     background-image: url(/assets/images/background-image.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-size:cover
+    background-size: cover
 }
 
 h1 {
@@ -51,7 +52,7 @@ h1 {
 
     text-align: center;
     font-size: 2.5rem;
-    
+
 }
 
 /* modal styles for welcome screen for when player arrives for first time */
@@ -79,9 +80,9 @@ h1 {
 }
 
 #welcome-box {
+    padding-top: 20px;
     width: 70%;
     font-size: 1.4rem;
-    /* margin-left: 0 auto; */
     background: white(172, 172, 172, 0.9);
     position: fixed;
     z-index: 1;
@@ -132,17 +133,17 @@ h1 {
 }
 
 .letter-box {
-display: inline-block;
-height: 50px;
-width: 50px;
-background-color: rgb(85, 212, 53);
-margin-top: 20px;
-padding-top: 5px;
-border-radius: 15px;
-text-align: center;
-font-weight: bolder;
-font-size: 1.8rem;
-border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(85, 212, 53);
+    margin-top: 20px;
+    padding-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #guess-input {
@@ -221,7 +222,7 @@ border: 1px solid rgb(0, 0, 0);
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
     padding: 10px 10%;
     width: 100%;
@@ -229,9 +230,9 @@ footer {
     background-color: black;
 }
 
-footer li, a {
+footer li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
@@ -240,6 +241,36 @@ footer li, a {
 
 /* Media query for phones*/
 @media screen and (max-width: 320px) {
+
+    #welcome-box {
+        width: 70%;
+        height: 70%;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 5px 2%;
+        width: 100%;
+        height: 30px;
+    }
+
+    header h1 {
+        margin-right: auto;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        font-size: .8rem;
+    }
+
+    .nav-links li,
+    a {
+        display: inline-block;
+        padding: 0px 5px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
 
     #game-box {
         width: 70%;
@@ -284,59 +315,61 @@ footer li, a {
         font-size: 1.2rem;
         border: 1px solid rgb(0, 0, 0);
         padding-top: 5px;
-        }
+    }
 
-        #guess-input {
-            display: block;
-            height: 40px;
-            width: 40px;
-            background-color: white;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 15px;
-            font-weight: bolder;
-            font-size: 1.3rem;
-            text-align: center;
-            border: 1px solid rgb(0, 0, 0);
-        }
+    #guess-input {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        text-align: center;
+        border: 1px solid rgb(0, 0, 0);
+    }
 
-        #used-letters-box {
-            display: block;
-            height: 40px;
-            width: 130px;
-            background-color: white;
-            margin: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 15px;
-            text-align: center;
-            font-weight: bolder;
-            font-size: 1.2rem;
-            border: 1px solid rgb(0, 0, 0);
-        }
+    #used-letters-box {
+        display: block;
+        height: 40px;
+        width: 130px;
+        background-color: white;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        border: 1px solid rgb(0, 0, 0);
+    }
 
-        #difficulty-box {
-            margin-top: 30px;
-            text-align: left;
-            padding-left: 10px;
-            width: 20%;
-            height: 70px;
-        }
-        
-        #difficulty-box li {
-            list-style-type: none;
-            font-size: 1.2rem;
-        }
+    #difficulty-box {
+        margin-top: 30px;
+        text-align: left;
+        padding-left: 10px;
+        width: 20%;
+        height: 70px;
+    }
 
-};
+    #difficulty-box li {
+        list-style-type: none;
+        font-size: 1.2rem;
+    }
+
+}
+
+;
 
 /* Media query for talets*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {}
 
-};
+;
 
 /* Media query for laptops and larger tablets*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {}
 
-};
+;
