@@ -131,6 +131,12 @@ const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
 
+/* modal */
+const modalBtn = document.querySelector('.modal-btn');
+const modalBackdrop = document.querySelector('.backdrop');
+modalBtn.addEventListener('click', function() {
+    modalBackdrop.classList.add('backdrop-inactive');
+})
 
 let score = 0;
 let attempts;
