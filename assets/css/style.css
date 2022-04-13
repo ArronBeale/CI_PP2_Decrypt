@@ -289,6 +289,7 @@ footer li {
         font-size: 1rem;
     }
 
+    /* I need to turn id into a class as feedback page is using game box id also */
     #game-box {
         margin-top: 30px;
         width: 70%;
