@@ -215,26 +215,26 @@ function checkMode() {
     }
 }
 
+/* this adds input event listener to handle what functions
+to call when it receives an input
+*/
 guessInput.addEventListener('input', () => {
-    event.preventDefault();
     letterSpace();
     checkLetter();
-    form.reset();
     guessInput.focus();
     setTimeout(function () {
         checkLetter();
     }, 1500);
 })
 
-
-/* this event listener fires alot of the functions once the user inputs a guess */
+/* this event listener calls functions once the user 
+keys up after a guess. it is needed to reset the form after input.
+*/
 guessInput.addEventListener('keyup', function (event) {
     event.preventDefault();
     document.getElementById('guess-input').focus();
     checkWin();
-    // letterSpace();
-    // checkLetter();
-    // form.reset();
+    form.reset();
 
     if (answerArray.includes(guess)) {
         console.log('match');
