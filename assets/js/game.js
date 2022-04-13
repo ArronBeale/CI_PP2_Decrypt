@@ -130,6 +130,7 @@ const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
+const guessInput = document.getElementById('guess-input');
 
 /* modal */
 const modalBtn = document.querySelector('.modal-btn');
@@ -214,13 +215,26 @@ function checkMode() {
     }
 }
 
-/* this event listener fires alot of the functions once the user inputs a guess */
-form.addEventListener('keyup', function (event) {
+guessInput.addEventListener('input', () => {
     event.preventDefault();
-    document.getElementById('guess-input').focus();
     letterSpace();
     checkLetter();
     form.reset();
+    guessInput.focus();
+    setTimeout(function () {
+        checkLetter();
+    }, 1500);
+})
+
+
+/* this event listener fires alot of the functions once the user inputs a guess */
+guessInput.addEventListener('keyup', function (event) {
+    event.preventDefault();
+    document.getElementById('guess-input').focus();
+    checkWin();
+    // letterSpace();
+    // checkLetter();
+    // form.reset();
 
     if (answerArray.includes(guess)) {
         console.log('match');
@@ -304,6 +318,13 @@ function stopGame() {
     box5.innerHTML = 'D';
 }
 
+/* this function will check if the win condition has been met */
+function checkWin() {
+    if (wordPlace.includes(word)) {
+        winGame();
+    }
+}
+
 /** this function is for when a player guesses the word correctly, it displays win in the letter box
  * and increases their score and clears the used letters displayed for the next round
  */
@@ -363,13 +384,6 @@ function checkLetter() {
 
                 letterSpace();
                 return;
-            }
-            /* I had to run startGame function twice after winGame as i have a bug that 
-            carries over a correct letter to new game.
-            if i run startGame twice it wipes the bug instantly*/
-            if (word == wordPlace) {
-                winGame();
-
             }
         }
         if (found) return;
