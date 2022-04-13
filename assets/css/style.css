@@ -22,6 +22,9 @@ header {
 header h1 {
     margin-right: auto;
     color: white;
+    text-shadow: 0 0 5px #49ff18, 0 0 10px #49ff18, 0 0 15px #49ff18, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .nav-links {
@@ -46,14 +49,7 @@ body {
     background-size: cover
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
 
-    text-align: center;
-    font-size: 2.5rem;
-
-}
 
 /* modal styles for welcome screen for when player arrives for first time */
 .backdrop {
@@ -87,6 +83,7 @@ h1 {
     position: fixed;
     z-index: 1;
     background-color: white;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .modal-btn {
@@ -159,6 +156,10 @@ h1 {
     font-size: 1.8rem;
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
+}
+
+#guess-label {
+    visibility: hidden;
 }
 
 #submit-btn {
@@ -273,6 +274,7 @@ footer li {
     }
 
     #game-box {
+        margin-top: 30px;
         width: 70%;
         height: 100vh;
     }
@@ -358,6 +360,15 @@ footer li {
     #difficulty-box li {
         list-style-type: none;
         font-size: 1.2rem;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 
 }
