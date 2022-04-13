@@ -79,7 +79,7 @@ body {
     padding-top: 20px;
     width: 70%;
     font-size: 1.4rem;
-    background: white(172, 172, 172, 0.9);
+    background: white;
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -373,8 +373,6 @@ footer li {
 
 }
 
-;
-
 /* Media query for talets*/
 @media screen and (min-width: 601px) and (max-width: 1200px) {
 #welcome-box {
@@ -496,9 +494,7 @@ a {
 }
 
 }
-;
 
 /* Media query for laptops and larger tablets*/
 @media screen and (max-width: 1200px) {}
 
-;
