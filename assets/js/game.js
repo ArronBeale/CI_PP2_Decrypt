@@ -361,6 +361,9 @@ function loseGame() {
     box5.innerHTML = '!';
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
+
+    /* startGame is ran twice to fix a bug that carries a previous correct letter
+    to a new game */
     setTimeout(function () {
         startGame();
     }, 1000);
