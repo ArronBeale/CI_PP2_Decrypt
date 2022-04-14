@@ -256,6 +256,14 @@ footer li {
     overflow: hidden;
 }
 
+.contact-box {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    border: 1px solid black;;
+}
+
 /* Media query for phones*/
 @media screen and (max-width: 600px) {
 

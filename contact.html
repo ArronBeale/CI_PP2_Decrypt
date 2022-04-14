@@ -8,7 +8,7 @@
     <meta name="description" content="decrypt game which is a word guessing puzzle.">
     <meta name="keywords" content="game, word, word guess, puzzle">
     <meta name="author" content="Arron Beale">
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f561b9867c.js" crossorigin="anonymous"></script>
 
@@ -19,7 +19,7 @@
 <body>
     <header>
         <!-- <div id="heading-box"> -->
-            <h1>Decrypt</h1>
+        <h1>Decrypt</h1>
         <!-- </div> -->
         <nav class="nav-box">
             <ul class="nav-links">
@@ -28,17 +28,29 @@
             </ul>
         </nav>
     </header>
-    
-    
+
+
     <div id="game-box">
-        
+        <div class="contact-box">
+            <form id="contact-form">
+                <label>First Name</label>
+                <input type="text" name="first-name" required><br>
+                <label>Last Name</label>
+                <input type="text" name="last-name" required><br>
+                <label>Email</label>
+                <input type="email" name="user-email" required><br>
+                <label>Message</label>
+                <textarea name="message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </div>
 
     <footer>
         <ul>
             <li><a href="https://www.linkedin.com/in/arronbeale/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/ArronBeale" target="_blank">GitHub</a></li>
-            <li><a href="contact.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </footer>
     <script src="assets/js/contact.js"></script>
