@@ -14,6 +14,29 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Decrypt | Contact</title>
+
+    <!-- EmailJS script template used below for sending contact form messages to my Gmail-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('mcd7Qd9Dhv9KI6qxp');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -33,15 +56,19 @@
     <div id="game-box">
         <div class="contact-box">
             <form id="contact-form">
-                <label>First Name</label>
-                <input type="text" name="first-name" required><br>
-                <label>Last Name</label>
-                <input type="text" name="last-name" required><br>
-                <label>Email</label>
-                <input type="email" name="user-email" required><br>
-                <label>Message</label>
-                <textarea name="message" required></textarea><br>
-                <input type="submit" value="Send">
+                <div>
+                    <label>Name</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="user-email" required>
+                </div>
+                <div>
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                </div>
+                <input type="submit" value="Send" id="submit">
             </form>
         </div>
     </div>
