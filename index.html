@@ -25,6 +25,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><span id="btn-music-on"><i class="fas fa-music btn"></i></span></li>
+                <li><span id="btn-music-off"><i class="fas fa-music-alt-slash btn"></i></span></li>
             </ul>
         </nav>
     </header>
@@ -66,8 +68,8 @@
             <p>Attempts left: <span id="attempts">5</span></p>
         </div>
 
-        <span><i data-type="play" id='playBtn' class="fas fa-play btn"></i></span>
-        <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn"></i></span>
+        <span><i data-type="play" id='playBtn' class="fas fa-play btn game-controls"></i></span>
+        <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls"></i></span>
 
         <div id="used-letters-box"></div>
         <div id="difficulty-box">
@@ -76,6 +78,9 @@
                 <li><span id="btn-medium" class="btn-mode btn" data-type="medium">Medium</span></li>
                 <li><span id="btn-hard" class="btn-mode btn" data-type="hard">Hard</span></li>
             </ul>
+        </div>
+        <div id="btn-rules">
+            <span><i class="fas fa-question btn"></i></span>
         </div>
     </div>
 
