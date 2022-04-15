@@ -1,5 +1,6 @@
 # Decrypt (Work in progress)
 Developer: Arron Beale
+[Deployed Site](https://arronbeale.github.io/CI_PP2_Decrypt/)
 
 
 
@@ -46,7 +47,7 @@ The goal of this project is to create a challenging and fun word guessing game.
 ### Site Owner Goals
 - Provide a challenging and fun game.
 - Provide various levels of difficulty to the player
-- Provide an option for the player to leave feedback.
+- Provide an option for the player to contact.
 - Provide compatability for different screen sizes.
 
 [Back to Top](<#Table-of-Content>)
@@ -64,8 +65,8 @@ The goal of this project is to create a challenging and fun word guessing game.
 - A score for the player.
 - A rules section to view game rules.
 - Intuitive gameplay.
-- An option to leave feedback.
-- AN option to change difficulty.
+- An option to contact.
+- An option to change difficulty.
 
 ### User Stories
 
@@ -84,7 +85,7 @@ The goal of this project is to create a challenging and fun word guessing game.
 10. As the site owner, I would like the game to be challenging and fun.
 11. As the site owner, I would like a simplistic design.
 12. As the site owner, I would like different device size compatability.
-13. As the site owner, I would like feedback.
+13. As the site owner, I would like a contact form.
 14. As the site owner, I would like to provide difficulty levels.
 
 [Back to Top](<#Table-of-Content>)
@@ -215,9 +216,9 @@ First Time User:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 |used letters not wiping on new game | |
-|Opening guess correct, score not increasing | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
-|Attempts not resetting after game | I had to add a function to check which mode was true and it would reset attempts accordingly|
-|Correct letters from previous game carrying to new game | Upon win I set startGame function to be called twice which wipes the letters carrying over. |
+|Opening guess correct, score not increasing. | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
+|Attempts not resetting after game. | I had to add a function to check which mode was true and it would reset attempts accordingly|
+|Correct letters from previous game carrying to new game. | Upon win I set startGame function to be called twice which wipes the letters carrying over. |
 [Back to Top](<#Table-of-Content>)
 ## Deployment
 The website was deployed to GitHub Pages via the following:
