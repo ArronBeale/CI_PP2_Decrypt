@@ -1,26 +1,30 @@
 let submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click', handleSubmit);
 
+let a = false;
+let b = false;
+let c = false;
 let valid = false;
 
 function validateForm() {
     let x = document.forms["contact-form"]["name"].value;
     let y = document.forms["contact-form"]["email"].value;
     let z = document.forms["contact-form"]["message"].value;
-    if (x == "") {
+
+    if (x === "") {
         valid = false;
     } else {
-        valid = true;
+        a = true;
     }
-    if (y == "") {
+    if (y === "") {
         valid = false;
     } else {
-        valid = true;
+        b = true;
     }
-    if (z == "") {
+    if (z === "") {
         valid = false;
     } else {
-        valid = true;
+        c = true;
     }
 }
 
@@ -36,7 +40,9 @@ function handleSubmit(event) {
     <p>Your message was: ${message}</p>
     `
     validateForm();
-    if (valid ==true) {setTimeout(function () {
-        contactForm.innerHTML = html;
-    }, 1000);}
+    if (a && b && c === true) {
+        setTimeout(function () {
+            contactForm.innerHTML = html;
+        }, 1000);
+    }
 }

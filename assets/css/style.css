@@ -167,7 +167,7 @@ body {
     visibility: hidden;
 }
 
-#submit-btn {
+/* #submit-btn {
     display: block;
     height: 50px;
     width: 200px;
@@ -179,6 +179,10 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: larger;
+} */
+
+#submit:hover {
+    background-color: rgb(85, 212, 53);
 }
 
 #used-letters-box {
@@ -288,6 +292,12 @@ footer li {
     margin-top: 30%;
     background-color: white;
     text-align: center;
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+    padding: 10px;
 }
 .contact-box div {
     padding: 10px;
@@ -306,7 +316,7 @@ input {
     border: 1px solid black;
     padding: 7px;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
 }
 
 /* Media query for phones*/
