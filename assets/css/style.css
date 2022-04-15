@@ -146,6 +146,10 @@ body {
     color: rgb(85, 212, 53);
 }
 
+.modal-btn3:hover {
+    color: rgb(85, 212, 53);
+}
+
 /* the following styles are for within the game area */
 #game-box {
     margin-left: auto;
