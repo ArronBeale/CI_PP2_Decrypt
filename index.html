@@ -34,12 +34,21 @@
     <div class="backdrop">
         <div id="welcome-box" class="modal">
             <h2>Welcome Player!</h2><br>
-            <p>Try to guess the 5 letter word.</p><br>
-            <p>Easy will give you 10 attempts.</p><br>
-            <p>Medium will give you 8 attempts.</p><br>
-            <p>Hard will give you 5 attempts!</p><br>
+            <p>Your mission is to decrypt the word!</p><br>
             <p><strong>The word has been encrypted</strong></p><br>
             <span class="modal-btn">X</span>
+        </div>
+    </div>
+
+    <div class="backdrop2">
+        <div id="rules-box" class="modal2">
+            <h2>Rules!</h2><br>
+            <p>Try to guess the 5 letter word.</p><br>
+            <p>Easy x 10 attempts.</p><br>
+            <p>Medium x 8 attempts.</p><br>
+            <p>Hard x 5 attempts!</p><br>
+            <p><strong>The word has been encrypted</strong></p><br>
+            <span class="modal-btn3">X</span>
         </div>
     </div>
 
@@ -70,15 +79,17 @@
         <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls"></i></span>
 
         <div id="used-letters-box"></div>
-        <div id="difficulty-box">
-            <ul>
-                <li><span id="btn-easy" class="btn-mode btn" data-type="easy">Easy</span></li>
-                <li><span id="btn-medium" class="btn-mode btn" data-type="medium">Medium</span></li>
-                <li><span id="btn-hard" class="btn-mode btn" data-type="hard">Hard</span></li>
-            </ul>
-        </div>
-        <div id="btn-rules">
-            <span><i class="fas fa-question btn"></i></span>
+        <div id="flex-box1">
+            <div id="difficulty-box">
+                <ul>
+                    <li><span id="btn-easy" class="btn-mode btn" data-type="easy">Easy</span></li>
+                    <li><span id="btn-medium" class="btn-mode btn" data-type="medium">Medium</span></li>
+                    <li><span id="btn-hard" class="btn-mode btn" data-type="hard">Hard</span></li>
+                </ul>
+            </div>
+            <div id="btn-rules">
+                <i class="fas fa-question btn modal-btn2"></i>
+            </div>
         </div>
     </div>
 

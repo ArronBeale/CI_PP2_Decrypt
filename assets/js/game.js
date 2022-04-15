@@ -132,11 +132,21 @@ const usedLettersBox = document.getElementById('used-letters-box');
 const answerBox = document.getElementById('answer-box');
 const guessInput = document.getElementById('guess-input');
 
-/* modal */
+/* modals for welcome screen on page load and rules screen toggle */
 const modalBtn = document.querySelector('.modal-btn');
 const modalBackdrop = document.querySelector('.backdrop');
 modalBtn.addEventListener('click', function() {
     modalBackdrop.classList.add('backdrop-inactive');
+})
+
+const modalBtn2 = document.querySelector('.modal-btn2');
+const modalBtn3 = document.querySelector('.modal-btn3');
+const modalBackdrop2 = document.querySelector('.backdrop2');
+modalBtn2.addEventListener('click', function() {
+    modalBackdrop2.classList.add('backdrop2-active');
+})
+modalBtn3.addEventListener('click', function() {
+    modalBackdrop2.classList.add('backdrop2-inactive');
 })
 
 let score = 0;
