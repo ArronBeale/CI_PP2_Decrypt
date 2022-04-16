@@ -6,6 +6,19 @@ let b = false;
 let c = false;
 let valid = false;
 
+let song = document.getElementById('audio');
+let playing = false;
+
+let musicToggleBtn = document.getElementById('btn-music-on')
+musicToggleBtn.addEventListener('click', function () {
+    song.play();
+    musicToggleBtn.style.color = '#55D435';
+    playing = true;
+    if (playing = true) {
+        
+    }
+})
+
 function validateForm() {
     let x = document.forms["contact-form"]["name"].value;
     let y = document.forms["contact-form"]["email"].value;

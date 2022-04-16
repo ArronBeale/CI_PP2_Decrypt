@@ -133,10 +133,16 @@ let medium = true;
 let hard = false;
 
 let song = document.getElementById('audio');
+let playing = false;
 
 let musicToggleBtn = document.getElementById('btn-music-on')
 musicToggleBtn.addEventListener('click', function () {
     song.play();
+    musicToggleBtn.style.color = '#55D435';
+    playing = true;
+    if (playing = true) {
+        
+    }
 })
 
 const logoH1 = document.getElementById('logo-h1');
