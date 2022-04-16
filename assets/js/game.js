@@ -161,6 +161,11 @@ let easy = false;
 let medium = true;
 let hard = false;
 
+const logoH1 = document.getElementById('logo-h1');
+logoH1.addEventListener('click', function() {
+    window.location = "index.html";   
+})
+
 /* easy mode will give player 10 attempts */
 function easyMode() {
 
