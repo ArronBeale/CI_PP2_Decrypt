@@ -14,9 +14,14 @@ musicToggleBtn.addEventListener('click', function () {
     song.play();
     musicToggleBtn.style.color = '#55D435';
     playing = true;
-    if (playing = true) {
-        
-    }
+})
+
+let musicOffBtn = document.getElementById('btn-music-off');
+musicOffBtn.addEventListener('click', function() {
+    song.volume = 0;
+    musicOffBtn.style.color = '#55D435';
+    musicToggleBtn.style.color = 'white';
+    playing = false;
 })
 
 function validateForm() {

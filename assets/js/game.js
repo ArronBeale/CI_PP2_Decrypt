@@ -138,11 +138,18 @@ let playing = false;
 let musicToggleBtn = document.getElementById('btn-music-on')
 musicToggleBtn.addEventListener('click', function () {
     song.play();
+    song.volume = 1;
     musicToggleBtn.style.color = '#55D435';
+    musicOffBtn.style.color = 'white';
     playing = true;
-    if (playing = true) {
-        
-    }
+})
+
+let musicOffBtn = document.getElementById('btn-music-off');
+musicOffBtn.addEventListener('click', function() {
+    song.volume = 0;
+    musicOffBtn.style.color = '#55D435';
+    musicToggleBtn.style.color = 'white';
+    playing = false;
 })
 
 const logoH1 = document.getElementById('logo-h1');
