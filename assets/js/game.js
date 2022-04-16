@@ -244,6 +244,7 @@ function startGame() {
 
     checkMode();
     letterSpace();
+    generateRandomletters()
 
     for (let i = 0; i < words.length; i++) {
         correctLetters[i] = '';
@@ -252,6 +253,19 @@ function startGame() {
     for (let i = 0; i < 5; i++) {
         answerArray.push(word[i]);
     }
+
+    setTimeout(function () {
+        letterSpace();
+        generateRandomletters();
+        setTimeout(function () {
+            generateRandomletters();
+        }, 200);
+    }, 200);
+
+
+}
+
+function generateRandomletters() {
 
     let randomLetter1 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box1.innerHTML = randomLetter1;
@@ -263,7 +277,6 @@ function startGame() {
     box4.innerHTML = randomLetter4;
     let randomLetter5 = alphabet[Math.floor(Math.random() * alphabet.length)];
     box5.innerHTML = randomLetter5;
-
 }
 
 /** this function will stop the game and reset the score to 0 and reset the attempts to 5.
