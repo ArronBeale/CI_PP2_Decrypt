@@ -123,7 +123,6 @@ body {
 
 #welcome-box {
     padding: 20px;
-    /* width: 70%; */
     font-size: 1.4rem;
     background: white;
     position: fixed;
@@ -221,20 +220,6 @@ body {
 #guess-label {
     visibility: hidden;
 }
-
-/* #submit-btn {
-    display: block;
-    height: 50px;
-    width: 200px;
-    background-color: white;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: larger;
-} */
 
 #submit:hover {
     background-color: rgb(85, 212, 53);
@@ -379,8 +364,6 @@ input {
 @media screen and (max-width: 700px) {
 
     #welcome-box {
-        /* width: 50%; */
-        /* height: 70%; */
         font-size: 1rem;
     }
 
@@ -431,7 +414,6 @@ input {
     #music-btn-on {
         display: inline-block;
         font-size: 15px;
-        /* margin-top: 20px; */
     }
 
     #answer-box {

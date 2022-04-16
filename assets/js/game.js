@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let buttons = document.getElementsByClassName('btn');
     for (let button of buttons) {
-        
+
         button.addEventListener('click', function () {
 
             if (this.getAttribute('data-type') === 'play') {
@@ -80,35 +80,6 @@ let words = [
     'above'
 ];
 
-let alphabet = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-];
-
 const submitBtn = document.getElementById('submit-btn');
 const playBtn = document.getElementById('fa-play');
 const stopBtn = document.getElementById('fa-stop');
@@ -135,17 +106,17 @@ const guessInput = document.getElementById('guess-input');
 /* modals for welcome screen on page load and rules screen toggle */
 const modalBtn = document.querySelector('.modal-btn');
 const modalBackdrop = document.querySelector('.backdrop');
-modalBtn.addEventListener('click', function() {
+modalBtn.addEventListener('click', function () {
     modalBackdrop.classList.add('backdrop-inactive');
 })
 
 const modalBtn2 = document.querySelector('.modal-btn2');
 const modalBtn3 = document.querySelector('.modal-btn3');
 const modalBackdrop2 = document.querySelector('.backdrop2');
-modalBtn2.addEventListener('click', function() {
+modalBtn2.addEventListener('click', function () {
     modalBackdrop2.classList.add('backdrop2-active');
 })
-modalBtn3.addEventListener('click', function() {
+modalBtn3.addEventListener('click', function () {
     modalBackdrop2.classList.add('backdrop2-inactive');
 })
 
@@ -161,9 +132,16 @@ let easy = false;
 let medium = true;
 let hard = false;
 
+let song = document.getElementById('audio');
+
+let musicToggleBtn = document.getElementById('btn-music-on')
+musicToggleBtn.addEventListener('click', function () {
+    song.play();
+})
+
 const logoH1 = document.getElementById('logo-h1');
-logoH1.addEventListener('click', function() {
-    window.location = "index.html";   
+logoH1.addEventListener('click', function () {
+    window.location = "index.html";
 })
 
 /* easy mode will give player 10 attempts */
@@ -417,3 +395,32 @@ function checkLetter() {
 }
 
 letterSpace();
+
+let alphabet = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z'
+];
