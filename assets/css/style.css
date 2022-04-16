@@ -26,6 +26,12 @@ header h1 {
     text-align: center;
     font-size: 2.5rem;
 }
+
+header h1:hover {
+    color: black;
+    cursor: pointer;
+}
+
 .nav-box {
     display: inline-block;
     padding-right: 20px;
@@ -47,10 +53,12 @@ a {
 
 .nav-links li:hover {
     color: rgb(85, 212, 53);
+    cursor: pointer;
 }
 
 a:hover {
     color: rgb(85, 212, 53);
+    cursor: pointer;
 }
 
 body {
@@ -114,8 +122,8 @@ body {
 }
 
 #welcome-box {
-    padding-top: 20px;
-    width: 70%;
+    padding: 20px;
+    /* width: 70%; */
     font-size: 1.4rem;
     background: white;
     position: fixed;
@@ -264,7 +272,8 @@ body {
 
 .btn-mode:hover {
     font-weight: bolder;
-    color: white;
+    color: rgb(85, 212, 53);
+    cursor: pointer;
 }
 
 .game-controls {
@@ -291,6 +300,7 @@ body {
 
 .fas:hover {
     color: rgb(85, 212, 53);
+    cursor: pointer;
 }
 
 footer {
@@ -344,6 +354,7 @@ textarea {
     border-radius: 10px;
     padding: 10px;
 }
+
 .contact-box div {
     padding: 10px;
 }
@@ -368,8 +379,8 @@ input {
 @media screen and (max-width: 700px) {
 
     #welcome-box {
-        width: 70%;
-        height: 70%;
+        /* width: 50%; */
+        /* height: 70%; */
         font-size: 1rem;
     }
 
@@ -403,7 +414,6 @@ input {
 
     /* I need to turn id into a class as feedback page is using game box id also */
     #game-box {
-        margin-top: 30px;
         width: 70%;
         height: 100vh;
     }
@@ -501,14 +511,38 @@ input {
     #flex-box1 {
         display: flex;
         flex-direction: column;
-        
+
     }
 
     header {
         top: 0;
     }
+
     footer {
         bottom: 0;
     }
 
+}
+
+/* Media query for tablets / laptops*/
+@media screen and (min-width: 701px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    #game-box {
+        width: 40%;
+        height: 100vh;
+        opacity: 1;
+    }
+}
+
+/* Media query for tablets / laptops*/
+@media screen and (min-width: 1130px) {
+    #game-box {
+        width: 30%;
+        height: 100vh;
+        opacity: 1;
+    }
 }
