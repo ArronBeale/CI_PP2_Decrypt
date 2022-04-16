@@ -411,7 +411,7 @@ input {
         margin-top: 20px;
     }
 
-    #music-btn-on {
+    #btn-music-on, #btn-music-off {
         display: inline-block;
         font-size: 15px;
     }
