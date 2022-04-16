@@ -28,56 +28,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// these are the five most common five letter words according to google that will be used in the game.
 let words = [
-    'which',
-    'their',
-    'there',
-    'would',
-    'other',
-    'these',
-    'about',
-    'first',
-    'could',
-    'after',
-    'those',
-    'where',
-    'being',
-    'under',
-    'years',
-    'great',
-    'state',
-    'world',
-    'three',
-    'found',
-    'might',
-    'still',
-    'right',
-    'place',
-    'every',
-    'power',
-    'since',
-    'given',
-    'never',
-    'order',
-    'water',
-    'small',
-    'shall',
-    'large',
-    'point',
-    'again',
-    'often',
-    'among',
-    'house',
-    'women',
-    'group',
-    'think',
-    'human',
-    'later',
-    'until',
-    'whole',
-    'early',
-    'means',
-    'above'
+    'which', 'their', 'there', 'would', 'other', 'these', 'about', 'first', 'could', 'after', 'those', 'where', 'being',
+    'under', 'years', 'great', 'state', 'world', 'three', 'found', 'might', 'still', 'right', 'place', 'every', 'power', 'since',
+    'given', 'never', 'order', 'water', 'small', 'shall', 'large', 'point', 'again', 'often', 'among', 'house', 'women', 'group',
+    'think', 'human', 'later', 'until', 'whole', 'early', 'means', 'above'
+];
+
+// these are the letters and symbols to generate a random "encrypted word" for the game.
+let alphabet = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
+    'x', 'y', 'z', '&', '*', '#', '%', '£', '!', '@', '?'
 ];
 
 const submitBtn = document.getElementById('submit-btn');
@@ -110,12 +72,15 @@ modalBtn.addEventListener('click', function () {
     modalBackdrop.classList.add('backdrop-inactive');
 })
 
+// buttons to control the welcome screen and rules screen
 const modalBtn2 = document.querySelector('.modal-btn2');
 const modalBtn3 = document.querySelector('.modal-btn3');
 const modalBackdrop2 = document.querySelector('.backdrop2');
+
 modalBtn2.addEventListener('click', function () {
     modalBackdrop2.classList.add('backdrop2-active');
 })
+
 modalBtn3.addEventListener('click', function () {
     modalBackdrop2.classList.add('backdrop2-inactive');
 })
@@ -145,7 +110,7 @@ musicToggleBtn.addEventListener('click', function () {
 })
 
 let musicOffBtn = document.getElementById('btn-music-off');
-musicOffBtn.addEventListener('click', function() {
+musicOffBtn.addEventListener('click', function () {
     song.volume = 0;
     musicOffBtn.style.color = '#55D435';
     musicToggleBtn.style.color = 'white';
@@ -408,32 +373,3 @@ function checkLetter() {
 }
 
 letterSpace();
-
-let alphabet = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-];
