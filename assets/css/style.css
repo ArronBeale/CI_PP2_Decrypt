@@ -70,7 +70,7 @@ body {
 }
 
 .active {
-    border-bottom: 2px solid #2596be;
+    border-bottom: 1px solid rgb(85, 212, 53);
 }
 
 /* modal styles for welcome screen for when player arrives for first time */
@@ -324,7 +324,7 @@ footer li {
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-size: contain;
     overflow: hidden;
 }
