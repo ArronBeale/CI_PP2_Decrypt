@@ -21,7 +21,6 @@ header {
 
 header h1 {
     display: flex;
-    /* margin-left: auto; */
     color: white;
     text-shadow: 0 0 5px #49ff18, 0 0 10px #49ff18, 0 0 15px #49ff18, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
     font-size: 2.5rem;
@@ -33,8 +32,9 @@ header h1:hover {
 }
 
 .nav-box {
-    display: inline-block;
-    padding-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
 }
 
 .nav-links {
@@ -46,7 +46,7 @@ a {
     display: inline-block;
     padding: 0px 10px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
@@ -339,6 +339,7 @@ footer li {
     background-color: white;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 textarea {
@@ -367,6 +368,15 @@ input {
 }
 
 /* Media query for phones*/
+@media screen and (max-width: 350px) {
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
+}
+
+/* Media query for phones*/
 @media screen and (max-width: 700px) {
 
     #welcome-box {
@@ -378,7 +388,7 @@ input {
     }
 
     .nav-links {
-        font-size: .8rem;
+        font-size: 2rem;
     }
 
     .nav-links li,
@@ -409,7 +419,8 @@ input {
         margin-top: 20px;
     }
 
-    #btn-music-on, #btn-music-off {
+    #btn-music-on,
+    #btn-music-off {
         display: inline-block;
         font-size: 15px;
     }
@@ -508,7 +519,7 @@ input {
 /* Media query for tablets / laptops*/
 @media screen and (min-width: 701px) {
     footer {
-        /* position: fixed; */
+        position: fixed;
         bottom: 0;
     }
 
@@ -524,10 +535,10 @@ input {
 }
 
 /* Media query for tablets / laptops*/
-@media screen and (min-width: 1130px) {
+@media screen and (min-width: 1000px) {
     #game-box {
         width: 30%;
-        height: 100%;
+        height: 100vh;
         opacity: 1;
     }
 }
