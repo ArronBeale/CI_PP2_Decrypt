@@ -69,6 +69,10 @@ body {
     background-size: cover
 }
 
+.active {
+    border-bottom: 2px solid #2596be;
+}
+
 /* modal styles for welcome screen for when player arrives for first time */
 .backdrop {
     position: fixed;
@@ -273,6 +277,7 @@ body {
 
 #btn-music-off {
     font-size: 20px;
+    color: rgb(85, 212, 53);
 }
 
 #btn-rules {
