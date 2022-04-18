@@ -81,7 +81,7 @@ openRulesBtn.addEventListener('click', function () {
 })
 
 closeRulesBtn.addEventListener('click', function () {
-    modalBackdropRules.classList.remove('.backdrop-rules-active');
+    document.getElementById("rules-box").classList.remove('backdrop-rules-active');
 })
 
 let score = 0;
