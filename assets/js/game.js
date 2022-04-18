@@ -367,6 +367,9 @@ function checkLetter() {
                 correctLetters[i] = guess;
 
                 letterSpace();
+                if (wordPlace === word) {
+                    winGame();
+                }
                 return;
             }
         }
@@ -379,6 +382,7 @@ function checkLetter() {
         if (attempts == 0) {
             loseGame();
         }
+
     };
 }
 
