@@ -312,6 +312,22 @@ body {
     padding-bottom: 10%;
 }
 
+.flex-box {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+#music-box {
+    display: flex;
+    padding: 20px;
+}
+
+#rules-box {
+    display: flex;
+    padding: 20px;
+}
+
 .fas:hover {
     color: rgb(85, 212, 53);
     cursor: pointer;
@@ -399,6 +415,10 @@ input {
 
     .score-box p {
         font-size: 1rem;
+    }
+
+    .contact-box {
+        height: 100%;
     }
 
 }

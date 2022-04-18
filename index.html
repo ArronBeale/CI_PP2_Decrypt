@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f561b9867c.js" crossorigin="anonymous"></script>
 
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div id ='rules-box' class="backdrop-rules-inactive">
+    <div id='rules-box' class="backdrop-rules-inactive">
         <div id="welcome-box" class="modal-rules">
             <h2>Rules!</h2><br>
             <p>Try to guess the 5 letter word.</p><br>
@@ -56,8 +56,12 @@
     </div>
 
     <div id="game-box">
+        <div class="flex-box">
+            <div id="music-box"><span id="btn-music-off"><i class="fas fa-volume-mute btn"></i></span></div>
+            <div id="btn-rules"><span><i class="fas fa-question btn " id="modal-btn-rules"></i></span></div>
+        </div>
         <div class="score-box">
-            <p>Score: <span id="score">0</span><span id="btn-music-off"><i class="fas fa-volume-mute btn"></i></span></p>
+            <p>Score: <span id="score">0</span></p>
         </div>
         <div id="answer-box">
             <span id="answer"></span>
@@ -82,7 +86,9 @@
         <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls"></i></span>
 
         <div id="used-letters-box"></div>
-        <div><p>Used Letters</p></div>
+        <div>
+            <p>Used Letters</p>
+        </div>
         <div id="flex-box1">
             <div id="difficulty-box">
                 <ul>
@@ -91,11 +97,10 @@
                     <li><span id="btn-hard" class="btn-mode btn" data-type="hard">Hard</span></li>
                 </ul>
             </div>
-            <div id="btn-rules">
-                <i class="fas fa-question btn " id="modal-btn-rules"></i>
-            </div>
         </div>
-        <audio id='audio' src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/audio/cyberpunk-street.mp3?raw=true" loop>
+        <audio id='audio'
+            src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/audio/cyberpunk-street.mp3?raw=true"
+            loop>
             Your browser does not support this audio.
         </audio>
     </div>
