@@ -318,7 +318,7 @@ function winGame() {
     box5.innerHTML = '*';
     document.getElementById("guess-input").disabled = true;
     usedLettersBox.innerHTML = '';
-    scoreBox.innerHTML = score++;
+    scoreBox.innerHTML = score += 1;
 
     setTimeout(function () {
         startGame();
