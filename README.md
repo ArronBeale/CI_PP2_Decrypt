@@ -96,12 +96,17 @@ The goal of this project is to create a challenging and fun word guessing game.
 
 ### Design Choices
 
+The design I chose was an arcade feel as it was a game, I wanted to make the player feel like they were in an arcade.
+This alongside the background audio which the player can toggle on and off I hope achieves this aim.
 
 ### Color
 
+The color I went with were a black background for header and footer and then a green color when you hover a button.
+The background image of the arcade ahs neon lights that I tried to link to my design and colors.
 
 ### Fonts
 
+-
 
 ### Structure
 
@@ -245,10 +250,10 @@ You can clone the repository by following these steps:
 
 [Back to Top](<#Table-of-Content>)
 ## Credits
-- Audio track "Cyberpunk Street" provided by ansimuz via soundcloud https://soundcloud.com/ansimuz/cyberpunk-street / www.patreon.com/ansimuz
+- 
 
 ### Media
-- 
+- Audio track "Cyberpunk Street" provided by Ansimuz via soundcloud https://soundcloud.com/ansimuz/cyberpunk-street / www.patreon.com/ansimuz
 
 ### Code
 - 
