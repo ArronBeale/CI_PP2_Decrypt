@@ -397,6 +397,10 @@ input {
         font-size: 1rem;
     }
 
+    .score-box p {
+        font-size: 1rem;
+    }
+
 }
 
 /* Media query for phones*/
@@ -429,7 +433,7 @@ input {
     /* I need to turn id into a class as feedback page is using game box id also */
     #game-box {
         width: 70%;
-        height: 100vh;
+        height: 100%;
     }
 
     .score-box {
@@ -548,7 +552,7 @@ input {
 
     #game-box {
         width: 40%;
-        height: 100vh;
+        height: 100%;
         opacity: 1;
     }
 
@@ -557,11 +561,11 @@ input {
     }
 }
 
-/* Media query for tablets / laptops*/
+/* Media query for tablets / laptops and higher size screens*/
 @media screen and (min-width: 1000px) {
     #game-box {
         width: 30%;
-        height: 100vh;
+        height: 100%;
         opacity: 1;
     }
 }
