@@ -66,23 +66,22 @@ const answerBox = document.getElementById('answer-box');
 const guessInput = document.getElementById('guess-input');
 
 /* modals for welcome screen on page load and rules screen toggle */
-const modalBtn = document.querySelector('.modal-btn');
-const modalBackdrop = document.querySelector('.backdrop');
-modalBtn.addEventListener('click', function () {
-    modalBackdrop.classList.add('backdrop-inactive');
+const closeWelcomeBtn = document.querySelector('#welcome-btn-close');
+const modalBackdropWelcome = document.querySelector('.backdrop-welcome');
+closeWelcomeBtn.addEventListener('click', function () {
+    modalBackdropWelcome.classList.add('backdrop-welcome-inactive');
 })
 
-// buttons to control the welcome screen and rules screen
-const modalBtn2 = document.querySelector('.modal-btn2');
-const modalBtn3 = document.querySelector('.modal-btn3');
-const modalBackdrop2 = document.querySelector('.backdrop2');
+const openRulesBtn = document.querySelector('#modal-btn-rules');
+const closeRulesBtn = document.querySelector('#modal-btn-close-rules');
+const modalBackdropRules = document.querySelector('.backdrop-rules-inactive');
 
-modalBtn2.addEventListener('click', function () {
-    modalBackdrop2.classList.add('backdrop2-active');
+openRulesBtn.addEventListener('click', function () {
+    modalBackdropRules.classList.add('backdrop-rules-active');
 })
 
-modalBtn3.addEventListener('click', function () {
-    modalBackdrop2.classList.add('backdrop2-inactive');
+closeRulesBtn.addEventListener('click', function () {
+    modalBackdropRules.classList.remove('.backdrop-rules-active');
 })
 
 let score = 0;

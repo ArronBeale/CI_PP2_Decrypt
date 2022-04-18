@@ -33,26 +33,26 @@
         </nav>
     </header>
 
-    <div class="backdrop">
+    <div class="backdrop-welcome">
         <div id="welcome-box" class="modal">
             <h2>Welcome Player!</h2><br>
             <p>The code word has been locked.</p><br>
             <p>We need it fast!</p><br>
             <p>Your mission is to decrypt the word.</p><br>
             <p><strong>Good luck!</strong></p><br>
-            <span class="modal-btn"><strong>X</strong></span>
+            <span id="welcome-btn-close"><strong>X</strong></span>
         </div>
     </div>
 
-    <div class="backdrop2">
-        <div id="welcome-box" class="modal2">
+    <div class="backdrop-rules-inactive">
+        <div id="welcome-box" class="modal-rules">
             <h2>Rules!</h2><br>
             <p>Try to guess the 5 letter word.</p><br>
             <p>Easy x 10 attempts.</p><br>
             <p>Medium x 8 attempts.</p><br>
             <p>Hard x 5 attempts!</p><br>
             <p><strong>The word has been encrypted</strong></p><br>
-            <span class="modal-btn3"><strong>X</strong></span>
+            <span id="modal-btn-close-rules"><strong>X</strong></span>
         </div>
     </div>
 
@@ -92,7 +92,7 @@
                 </ul>
             </div>
             <div id="btn-rules">
-                <i class="fas fa-question btn modal-btn2"></i>
+                <i class="fas fa-question btn " id="modal-btn-rules"></i>
             </div>
         </div>
         <audio id='audio' src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/audio/cyberpunk-street.mp3?raw=true" loop>

@@ -75,7 +75,7 @@ body {
 }
 
 /* modal styles for welcome screen for when player arrives for first time */
-.backdrop {
+.backdrop-welcome, .backdrop-rules-active {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@ body {
     opacity: 1;
 }
 
-.backdrop2 {
+.backdrop-welcome-inactive {
     position: fixed;
     top: 0;
     left: 0;
@@ -111,19 +111,37 @@ body {
     opacity: 1;
 }
 
-.backdrop-inactive {
+.backdrop-welcome-inactive {
     visibility: hidden;
     opacity: 0;
 }
 
-.backdrop2-active {
+/* .backdrop-rules-active {
     visibility: visible;
     opacity: 1;
-}
+} */
 
-.backdrop2-inactive {
+.backdrop-rules-inactive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: visibility 0s, opacity 0.5s;
     visibility: hidden;
     opacity: 0;
+}
+
+.backdrop-rules-active {
+    visibility: visible;
+    opacity: 1;
 }
 
 #welcome-box {
@@ -136,30 +154,35 @@ body {
     box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.modal-btn {
+#welcome-btn-close {
     background-color: rgb(0, 0, 0, 0);
     color: rgb(0, 0, 0);
     font-size: 2rem;
     cursor: pointer;
 }
 
-.modal-btn2 {
+#modal-btn-rules {
     background-color: rgb(0, 0, 0, 0);
     color: rgb(0, 0, 0);
     font-size: 2rem;
     cursor: pointer;
 }
 
-.modal-btn:hover {
+#welcome-btn-close:hover {
     color: rgb(85, 212, 53);
 }
 
-.modal-btn2:hover {
+#modal-btn-rules:hover {
     color: rgb(85, 212, 53);
 }
 
-.modal-btn3:hover {
+#modal-btn-rules:hover {
     color: rgb(85, 212, 53);
+}
+
+#modal-btn-close-rules:hover {
+    color: rgb(85, 212, 53);
+    cursor: pointer;
 }
 
 /* the following styles are for within the game area */
