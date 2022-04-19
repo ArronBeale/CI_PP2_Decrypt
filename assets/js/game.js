@@ -42,14 +42,10 @@ let alphabet = [
     'x', 'y', 'z', '&', '*', '#', '%', '£', '!', '@', '?'
 ];
 
-const submitBtn = document.getElementById('submit-btn');
-const playBtn = document.getElementById('fa-play');
-const stopBtn = document.getElementById('fa-stop');
 const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
 
-const letterBoxes = document.getElementsByClassName('letter-box');
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
@@ -57,12 +53,9 @@ const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
 
 const form = document.querySelector('#form');
-const boxArray = [box1, box2, box3, box4, box5];
-const usedLetters = [];
 const scoreBox = document.querySelector('#score');
 const attemptsBox = document.querySelector('#attempts');
 const usedLettersBox = document.getElementById('used-letters-box');
-const answerBox = document.getElementById('answer-box');
 const guessInput = document.getElementById('guess-input');
 
 /* modals for welcome screen on page load and rules screen toggle */
@@ -70,7 +63,7 @@ const closeWelcomeBtn = document.querySelector('#welcome-btn-close');
 const modalBackdropWelcome = document.querySelector('.backdrop-welcome');
 closeWelcomeBtn.addEventListener('click', function () {
     modalBackdropWelcome.classList.add('backdrop-welcome-inactive');
-})
+});
 
 const openRulesBtn = document.querySelector('#modal-btn-rules');
 const closeRulesBtn = document.querySelector('#modal-btn-close-rules');
@@ -78,11 +71,11 @@ const modalBackdropRules = document.querySelector('.backdrop-rules-inactive');
 
 openRulesBtn.addEventListener('click', function () {
     modalBackdropRules.classList.add('backdrop-rules-active');
-})
+});
 
 closeRulesBtn.addEventListener('click', function () {
     document.getElementById("rules-box").classList.remove('backdrop-rules-active');
-})
+});
 
 let score = 0;
 let attempts;
@@ -111,12 +104,12 @@ musicOffBtn.addEventListener('click', function () {
         song.volume = 0;
         musicOffBtn.style.color = '#55D435';
     }
-}) 
+});
 
 const logoH1 = document.getElementById('logo-h1');
 logoH1.addEventListener('click', function () {
     window.location = "index.html";
-})
+});
 
 /* easy mode will give player 10 attempts */
 function easyMode() {
@@ -192,7 +185,7 @@ guessInput.addEventListener('input', () => {
     setTimeout(function () {
         checkLetter();
     }, 1500);
-})
+});
 
 /* this event listener calls functions once the user 
 keys up after a guess. it is needed to reset the form after input.
@@ -240,7 +233,7 @@ function startGame() {
 
     checkMode();
     letterSpace();
-    generateRandomletters()
+    generateRandomletters();
 
     for (let i = 0; i < words.length; i++) {
         correctLetters[i] = '';
