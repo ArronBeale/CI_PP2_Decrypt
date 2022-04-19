@@ -230,6 +230,10 @@ body {
     border: 1px solid rgb(0, 0, 0);
 }
 
+#guess-input-label {
+    display:none;
+}
+
 #guess-input {
     display: block;
     height: 50px;
