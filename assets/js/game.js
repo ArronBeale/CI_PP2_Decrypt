@@ -95,7 +95,7 @@ let playing = false;
 let musicOffBtn = document.getElementById('btn-music-off');
 musicOffBtn.addEventListener('click', function () {
     song.play();
-    
+
     playing = false;
     if (song.volume === 0) {
         song.volume = 1;
@@ -203,11 +203,11 @@ guessInput.addEventListener('keyup', function (event) {
     }
 });
 
-/* I had to google a code example for the below function from a hangman game for placing an underscore that would then 
-allow it to change to the correct letter, the underscores then act as a hint when letters begin to fill them.*/
-
-/** this sets placeholders for when the correct letter is guessed it will change to show the correct letter
- * and it's position in the word.
+/**
+ * I had to google a code example for the below function from a hangman game for placing an underscore that would then 
+    allow it to change to the correct letter, the underscores then act as a hint when letters begin to fill them.
+    this sets placeholders for when the correct letter is guessed it will change to show the correct letter
+    and it's position in the word.
  */
 function letterSpace() {
 

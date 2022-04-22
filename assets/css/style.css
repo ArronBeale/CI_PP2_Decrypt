@@ -186,7 +186,7 @@ body {
 }
 
 /* the following styles are for within the game area */
-#game-box {
+.game-box {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -308,18 +308,17 @@ body {
     color: rgb(85, 212, 53);
 }
 
-#btn-rules {
+#modal-btn-rules {
     display: flex;
     font-size: 30px;
-    right: 0;
-    margin-left: 90%;
+    padding-left: 10px;
     padding-bottom: 10%;
 }
 
 .flex-box {
     display: flex;
     justify-content: left;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #music-box {
@@ -413,6 +412,8 @@ input {
 /* Media query for phones*/
 @media screen and (max-width: 350px) {
 
+    .game-box 
+
     .nav-links {
         font-size: 1rem;
     }
@@ -427,7 +428,7 @@ input {
 
 }
 
-/* Media query for phones*/
+/* Media query for tablets */
 @media screen and (max-width: 700px) {
 
     .modal-box {
@@ -454,8 +455,8 @@ input {
         font-size: .5rem;
     }
 
-    /* I need to turn id into a class as feedback page is using game box id also */
-    #game-box {
+    /* I need to turn id into a class as feedback page is using game box id also. */
+    .game-box {
         width: 70%;
         height: 100%;
     }
@@ -562,22 +563,17 @@ input {
 
     footer {
         bottom: 0;
-        position: fixed;
     }
 
 }
 
 /* Media query for tablets / laptops*/
 @media screen and (min-width: 701px) {
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
 
-    #game-box {
+    .game-box {
         width: 40%;
         height: 100%;
-        opacity: 1;
+        padding-bottom: 30px;
     }
 
     .contact-box {
@@ -587,7 +583,7 @@ input {
 
 /* Media query for tablets / laptops and higher size screens*/
 @media screen and (min-width: 1000px) {
-    #game-box {
+    .game-box {
         width: 30%;
         height: 100%;
         opacity: 1;
