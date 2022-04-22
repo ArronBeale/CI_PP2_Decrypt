@@ -185,7 +185,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(172, 172, 172, 0.9);
 }
 
@@ -305,19 +305,19 @@ body {
 .flex-box {
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #music-box {
     display: flex;
-    padding: 20px;
+    padding: 10px;
 }
 
 #modal-btn-rules {
     display: flex;
     font-size: 20px;
-    padding-left: 20px;
-    padding-bottom: 10%;
+    padding: 10px;
+    
 }
 
 #rules-box {
@@ -336,7 +336,7 @@ footer {
     width: 100%;
     height: 50px;
     background-color: black;
-    position: absolute;
+    position: static;
     bottom: 0;
 }
 
@@ -451,7 +451,7 @@ input {
 
     .game-box {
         width: 70%;
-        height: 100%;
+        height: 100vh;
     }
 
     .score-box {
@@ -464,7 +464,6 @@ input {
         margin-top: 20px;
     }
 
-    #btn-music-on,
     #btn-music-off {
         display: inline-block;
         font-size: 15px;
@@ -560,8 +559,8 @@ input {
 
     .game-box {
         width: 40%;
-        height: 100%;
-        padding-bottom: 30px;
+        height: 100vh;
+        padding-bottom: 40px;
     }
 
     .contact-box {
@@ -573,7 +572,7 @@ input {
 @media screen and (min-width: 1000px) {
     .game-box {
         width: 30%;
-        height: 100%;
+        height: 100vh;
         opacity: 1;
     }
 }
