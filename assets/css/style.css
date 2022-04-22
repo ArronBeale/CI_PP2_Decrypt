@@ -67,7 +67,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: auto
+    height: 100%
 }
 
 .active {
@@ -115,11 +115,6 @@ body {
     visibility: hidden;
     opacity: 0;
 }
-
-/* .backdrop-rules-active {
-    visibility: visible;
-    opacity: 1;
-} */
 
 .backdrop-rules-inactive {
     position: fixed;
@@ -190,12 +185,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(172, 172, 172, 0.9);
 }
 
 .score-box {
-    padding-top: 35px;
     font-weight: bolder;
     font-size: 1.3rem;
 }
@@ -310,14 +304,14 @@ body {
 
 #modal-btn-rules {
     display: flex;
-    font-size: 30px;
-    padding-left: 10px;
+    font-size: 20px;
+    padding-left: 20px;
     padding-bottom: 10%;
 }
 
 .flex-box {
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
@@ -337,7 +331,8 @@ body {
 }
 
 footer {
-    padding: 10px 10%;
+    position: static;
+    padding: 10px 10px;
     width: 100%;
     height: 40px;
     background-color: black;
@@ -560,11 +555,6 @@ input {
     header {
         top: 0;
     }
-
-    footer {
-        bottom: 0;
-    }
-
 }
 
 /* Media query for tablets / laptops*/
