@@ -302,13 +302,6 @@ body {
     color: rgb(85, 212, 53);
 }
 
-#modal-btn-rules {
-    display: flex;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-bottom: 10%;
-}
-
 .flex-box {
     display: flex;
     justify-content: flex-end;
@@ -318,6 +311,13 @@ body {
 #music-box {
     display: flex;
     padding: 20px;
+}
+
+#modal-btn-rules {
+    display: flex;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10%;
 }
 
 #rules-box {
@@ -407,8 +407,6 @@ input {
 /* Media query for phones*/
 @media screen and (max-width: 350px) {
 
-    .game-box 
-
     .nav-links {
         font-size: 1rem;
     }
@@ -450,7 +448,6 @@ input {
         font-size: .5rem;
     }
 
-    /* I need to turn id into a class as feedback page is using game box id also. */
     .game-box {
         width: 70%;
         height: 100%;
