@@ -6,23 +6,6 @@ let b = false;
 let c = false;
 let valid = false;
 
-let song = document.getElementById('audio');
-let playing = false;
-
-let musicOffBtn = document.getElementById('btn-music-off');
-musicOffBtn.addEventListener('click', function () {
-    song.play();
-    
-    playing = false;
-    if (song.volume === 0) {
-        song.volume = 1;
-        musicOffBtn.style.color = 'white';
-    } else if (song.volume === 1) {
-        song.volume = 0;
-        musicOffBtn.style.color = '#55D435';
-    }
-}) 
-
 function validateForm() {
     let x = document.forms["contact-form"]["name"].value;
     let y = document.forms["contact-form"]["email"].value;
