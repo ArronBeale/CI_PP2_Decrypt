@@ -67,7 +67,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .active {
@@ -267,7 +267,7 @@ body {
     border: 1px solid rgb(0, 0, 0);
 }
 
-#difficulty-box {
+.difficulty-box-visible {
     margin-top: 30px;
     text-align: left;
     padding-left: 10px;
@@ -279,6 +279,17 @@ body {
 #difficulty-box li {
     list-style-type: none;
     font-size: 1.5rem;
+}
+
+.difficulty-box-hide {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 10px;
+    width: 20%;
+    height: 70px;
+    font-weight: bolder;
+    cursor: none;
+    visibility: hidden;
 }
 
 .btn-mode:hover {

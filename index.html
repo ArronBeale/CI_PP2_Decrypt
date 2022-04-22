@@ -75,7 +75,7 @@
         <form id="form">
             <label id='guess-input-label' for="guess-input" aria-label="guess">_</label>
             <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1"
-                onkeyup="this.value = this.value.toLowerCase()" required pattern="[a-zA-Z]">
+                 required pattern="[a-zA-Z]">
         </form>
 
         <div class="score-box">
@@ -90,7 +90,7 @@
             <p>Used Letters</p>
         </div>
         <div id="flex-box1">
-            <div id="difficulty-box">
+            <div id="difficulty-box" class="difficulty-box-visible">
                 <ul>
                     <li><span id="btn-easy" class="btn-mode btn" data-type="easy">Easy</span></li>
                     <li><span id="btn-medium" class="btn-mode btn" data-type="medium">Medium</span></li>

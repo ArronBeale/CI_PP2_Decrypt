@@ -41,10 +41,12 @@ let alphabet = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
     'x', 'y', 'z', '&', '*', '#', '%', '£', '!', '@', '?'
 ];
-
+const playBtn = document.getElementById('play-btn');
+const stopBtn = document.getElementById('stop-btn');
 const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
+const difficultyBox = document.getElementById('difficulty-box');
 
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
@@ -175,6 +177,15 @@ function checkMode() {
     }
 }
 
+function difficultyLock() {
+    difficultyBox.classList.add('difficulty-box-hide');
+}
+
+function difficultyUnlock() {
+    difficultyBox.classList.remove('difficulty-box-hide');
+    difficultyBox.classList.add('difficulty-box-visible');
+}
+
 /* this adds input event listener to handle what functions
 to call when it receives an input
 */
@@ -222,6 +233,7 @@ function letterSpace() {
  */
 function startGame() {
 
+    difficultyLock();
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("guess-input").disabled = false;
@@ -273,6 +285,7 @@ function generateRandomletters() {
  */
 function stopGame() {
 
+    difficultyUnlock()
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("answer").innerHTML = '';
