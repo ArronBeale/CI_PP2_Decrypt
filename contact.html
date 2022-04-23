@@ -21,14 +21,14 @@
     <title>Decrypt | Contact</title>
 
     <!-- EmailJS script template used below for sending contact form messages to my Gmail-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
         (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('mcd7Qd9Dhv9KI6qxp');
         })();
     </script>
-    <script type="text/javascript">
+    <script>
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();

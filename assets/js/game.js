@@ -41,8 +41,7 @@ let alphabet = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
     'x', 'y', 'z', '&', '*', '#', '%', '£', '!', '@', '?'
 ];
-const playBtn = document.getElementById('play-btn');
-const stopBtn = document.getElementById('stop-btn');
+
 const easyBtn = document.getElementById('btn-easy');
 const mediumBtn = document.getElementById('btn-medium');
 const hardBtn = document.getElementById('btn-hard');
@@ -285,7 +284,7 @@ function generateRandomletters() {
  */
 function stopGame() {
 
-    difficultyUnlock()
+    difficultyUnlock();
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').focus();
     document.getElementById("answer").innerHTML = '';
