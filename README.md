@@ -172,7 +172,7 @@ There are currently 14 features across the deployed site.
 - Allows easy navigation to the home and contact page
 - User stories covered: 12, 11, 4
 <details><summary>Navigation bar</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.PNG">
 </details>
 
 ### Footer
@@ -211,6 +211,15 @@ There are currently 14 features across the deployed site.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
+### Play /Stop
+- Fully responsive on all screen sizes
+- Located at the mid level of the game screen
+- Allows player to start and stop game
+- User stories covered: 12, 11, 4, 7
+<details><summary>Play / Stop</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
+</details>
+
 ### Attempts
 - Fully responsive on all screen sizes
 - Located at the mid level of the game screen
@@ -218,6 +227,24 @@ There are currently 14 features across the deployed site.
 - User stories covered: 12, 11, 4, 9
 <details><summary>Attempts</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
+</details>
+
+### Correct Word
+- Fully responsive on all screen sizes
+- Located at the top level of the game screen
+- Shows the player the correct word on a win
+- User stories covered: 12, 11, 4, 9, 5
+<details><summary>Correct Word</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-correct-word.png">
+</details>
+
+### Difficulty
+- Fully responsive on all screen sizes
+- Located at the bottom left level of the game screen
+- Allows the player to choose a difficulty level
+- User stories covered: 12, 11, 4, 9, 5, 6, 2, 14, 10
+<details><summary>Difficulty</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
 [Back to Top](<#Table-of-Content>)
