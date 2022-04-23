@@ -162,8 +162,9 @@ There are currently 14 features across the deployed site.
 - Located on all pages
 - Allows easy navigation to the home page
 - User stories covered: 12, 11, 4
-![Logo](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-logo.png)
-
+<details><summary>Logo</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-logo.png">
+</details>
 
 ### navigation Bar
 - Fully responsive on all screen sizes
