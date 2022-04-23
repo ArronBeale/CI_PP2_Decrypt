@@ -102,10 +102,12 @@ This alongside the background audio which the player can toggle on and off I hop
 The colors I went with were green, white and black to match with the arcade background imae specifically the green neon lights in the image.
 The black header and footer were chosen as arcades are dark places around the lights of the machines and the white text for good contrast.
 ![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/color-selection.PNG)
+![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/nav-bar.PNG)
 
 ### Fonts
 
--
+The chosen font I decided on was Montserrat and sans-serif as a backup. Montserrat I felt gave the right character to the pages as
+I did not want any font that would take attention away from the actual game.
 
 ### Structure
 
