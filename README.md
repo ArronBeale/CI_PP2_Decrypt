@@ -320,26 +320,32 @@ No errors were detected across all validation platforms.
 
 
 <details><summary>Home</summary>
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/performance-lighthouse-home.PNG?raw=true">
 </details>
 <details><summary>Contact</summary>
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/performance-lighthouse-contact.PNG?raw=true">
 </details>
 <details><summary>404</summary>
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/performance-lighthouse-404.PNG?raw=true">
 </details>
 
 ### Performing Tests on Devices
+The following devices were used in testing
 
-- 
-- 
-- 
-- 
+- iPhone 5 (simulated / physical)
+- iPad Air (simulated)
+- Ipad Mini (simulated)
+- Surface Pro 7 (simulated)
+- Samsumg Galaxy A20 (Incompatible due to an issue with android virtual keyboard)
 
 ### Browser Compatibility
-- 
-- 
-- 
+The following browsers were used to test the site, no issues.
+
+- Mozilla Firefox - compatible
+- Google Chrome - compatible
+- Microsoft Edge - compatible
+- Inernet Explorer - incompatible
+
 
 ### Testing User Stories
 First Time User:
