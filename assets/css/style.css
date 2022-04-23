@@ -216,6 +216,7 @@ body {
     width: 50px;
     background-color: rgb(85, 212, 53);
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 5px;
     border-radius: 15px;
     text-align: center;
@@ -229,7 +230,7 @@ body {
     height: 50px;
     width: 50px;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;

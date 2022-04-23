@@ -39,7 +39,7 @@
             <p>We need it fast!</p><br>
             <p>Your mission is to decrypt the word.</p><br>
             <p><strong>Good luck!</strong></p><br>
-            <span id="welcome-btn-close"><strong>X</strong></span>
+            <span id="welcome-btn-close" aria-label="close welcome button"><strong>X</strong></span>
         </div>
     </div>
 
@@ -51,14 +51,14 @@
             <p>Medium x 8 attempts.</p><br>
             <p>Hard x 5 attempts!</p><br>
             <p><strong>The word has been encrypted</strong></p><br>
-            <span id="modal-btn-close-rules"><strong>X</strong></span>
+            <span id="modal-btn-close-rules" aria-label="close rules button"><strong>X</strong></span>
         </div>
     </div>
 
     <div class="game-box">
         <div class="flex-box">
-            <div id="music-box"><span id="btn-music-off"><i class="fas fa-volume-mute btn"></i></span></div>
-            <div id="modal-btn-rules"><span><i class="fas fa-question btn "></i></span></div>
+            <div id="music-box"><span id="btn-music-off"><i class="fas fa-volume-mute btn" aria-label="music button"></i></span></div>
+            <div id="modal-btn-rules"><span><i class="fas fa-question btn " aria-label="rules button"></i></span></div>
         </div>
         <div class="score-box">
             <p>Score: <span id="score">0</span></p>
@@ -73,7 +73,7 @@
         <div class="letter-box" id="box5">-</div>
 
         <form id="form">
-            <label  for="guess-input" aria-label="guess"></label>
+            <label  for="guess-input" aria-label="guess input">Guess Input</label>
             <input type="text" id="guess-input" name="letter-input" minlength="1" maxlength="1"
                  required pattern="[a-zA-Z]">
         </form>
@@ -82,8 +82,8 @@
             <p>Attempts left: <span id="attempts">5</span></p>
         </div>
 
-        <span><i data-type="play" id='playBtn' class="fas fa-play btn game-controls"></i></span>
-        <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls"></i></span>
+        <span><i data-type="play" id='playBtn' class="fas fa-play btn game-controls" aria-label="play button"></i></span>
+        <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls" aria-label="stop button"></i></span>
 
         <div id="used-letters-box"></div>
         <div>
@@ -107,8 +107,8 @@
 
     <footer>
         <ul>
-            <li><a href="https://www.linkedin.com/in/arronbeale/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/ArronBeale" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/arronbeale/" target="_blank" aria-label="visit my linkedin page">LinkedIn</a></li>
+            <li><a href="https://github.com/ArronBeale" target="_blank" aria-label="Visit my github page">GitHub</a></li>
         </ul>
     </footer>
     <script src="assets/js/game.js"></script>
