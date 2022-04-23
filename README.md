@@ -1,11 +1,9 @@
 # Decrypt (Work in progress)
 Developer: Arron Beale
 
-[Deployed Site](https://arronbeale.github.io/CI_PP2_Decrypt/)
-
 ![responsive display image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/am-i-responsive.PNG)
 
-
+[Deployed Site](https://arronbeale.github.io/CI_PP2_Decrypt/)
 
 ## Table of Content
 1. [Project Goals](#project-goals)
@@ -101,8 +99,9 @@ This alongside the background audio which the player can toggle on and off I hop
 
 ### Color
 
-The color I went with were a black background for header and footer and then a green color when you hover a button.
-The background image of the arcade ahs neon lights that I tried to link to my design and colors.
+The colors I went with were green, white and black to match with the arcade background imae specifically the green neon lights in the image.
+The black header and footer were chosen as arcades are dark places around the lights of the machines and the white text for good contrast.
+![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/color-selection.PNG)
 
 ### Fonts
 
