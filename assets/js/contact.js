@@ -7,9 +7,9 @@ let c = false;
 let valid = false;
 
 function validateForm() {
-    let x = document.forms["contact-form"]["name"].value;
-    let y = document.forms["contact-form"]["email"].value;
-    let z = document.forms["contact-form"]["message"].value;
+    let x = document.getElementById('name').value;
+    let y = document.getElementById('email').value;
+    let z = document.getElementById('message').value;
 
     if (x === "") {
         valid = false;
@@ -33,17 +33,20 @@ logoH1.addEventListener('click', function () {
     window.location = "index.html";
 });
 
+/** the below code handles the contact form and validates it
+ * to ensure all fields are filled before submission
+ */
 function handleSubmit(event) {
     let contactForm = document.getElementById('contact-form');
-    let name = contactForm.elements['name'].value;
-    let email = contactForm.elements['email'].value;
-    let message = contactForm.elements['message'].value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
     let html = `
     <h2>Hi ${name}!</h2><br>
     <p></p>Thanks for sending me a message.</p><br>
     <p>I will respond to ${email} soon.</p><br>
     <p>Your message was: ${message}</p>
-    `
+    `;
     validateForm();
     if (a && b && c === true) {
         setTimeout(function () {
