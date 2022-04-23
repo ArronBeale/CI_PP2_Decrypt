@@ -101,8 +101,8 @@ This alongside the background audio which the player can toggle on and off I hop
 
 The colors I went with were green, white and black to match with the arcade background imae specifically the green neon lights in the image.
 The black header and footer were chosen as arcades are dark places around the lights of the machines and the white text for good contrast.
-![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/color-selection.PNG)
 ![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/nav-bar.PNG)
+![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/color-selection.PNG)
 
 ### Fonts
 
@@ -111,11 +111,12 @@ I did not want any font that would take attention away from the actual game.
 
 ### Structure
 
+The structure of the site is built to give the game the primary focus, upon landing on the page you are welcomed by the game.
+This allows players who came to the site to play the game to start playing immediatly without the need to navigate unnecessarily.
 
-- 
-- 
-- 
-- 
+- Home page lands the player directly to the game welcoming them and ready to play.
+- Contact page has a feedback / contact form for players to leave feedback or get in touch. This is linked to the creators Gmail and all fields are required.
+- 404 page is present for any navigation errors by the user that will allow them to return to the home page.
 
 ### Wireframes
 
