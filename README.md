@@ -171,42 +171,54 @@ There are currently 14 features across the deployed site.
 - Located on all pages
 - Allows easy navigation to the home and contact page
 - User stories covered: 12, 11, 4
-![Navigation](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.png)
+<details><summary>Navigation bar</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.png">
+</details>
 
-### footer
+### Footer
 - Fully responsive on all screen sizes
 - Located on all pages
 - Allows easy navigation to creators LinkedIn and GitHub pages.
 - User stories covered: 12, 11, 4
-![Footer](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png)
+<details><summary>Footer</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png">
+</details>
 
 ### Welcome
 - Fully responsive on all screen sizes
 - Located on game page when player lands
 - Welcomes player and describes the game
 - User stories covered: 12, 11, 4, 1
-![Welcome](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png)
+<details><summary>Welcome</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png">
+</details>
 
 ### Rules
 - Fully responsive on all screen sizes
 - Located on game page when player clicks the rules button
 - Tells the player the rules of the game
 - User stories covered: 12, 11, 4, 1
-![Rules](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png)
+<details><summary>Rules</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png">
+</details>
 
 ### Score
 - Fully responsive on all screen sizes
 - Located at the top of the game screen
 - Shows the player their current score
 - User stories covered: 12, 11, 4, 3
-![Score](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png)
+<details><summary>Score</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
+</details>
 
 ### Attempts
 - Fully responsive on all screen sizes
 - Located at the mid level of the game screen
 - Shows the player their current attempts
 - User stories covered: 12, 11, 4, 9
-![Attempts](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png)
+<details><summary>Attempts</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
+</details>
 
 [Back to Top](<#Table-of-Content>)
 ## Validation
