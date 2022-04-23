@@ -101,6 +101,7 @@ This alongside the background audio which the player can toggle on and off I hop
 
 The colors I went with were green, white and black to match with the arcade background imae specifically the green neon lights in the image.
 The black header and footer were chosen as arcades are dark places around the lights of the machines and the white text for good contrast.
+The green I chose was a slightly different shade from the below image, rgb(85, 212, 53).
 ![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/nav-bar.PNG)
 ![Color selection image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/color-selection.PNG)
 
@@ -123,7 +124,7 @@ This allows players who came to the site to play the game to start playing immed
 My original concept was a single page that would house everything such as the contact form, rules.
 It would have a countdown alongside the attempts. As the project advanced I removed the countdown as I began to feel it was unnecessary.
 
-<details><summary>Home</summary>
+<details><summary>Wireframe Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/wireframes/wireframe-home.png">
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/wireframes/wireframe-evolved.png">
 </details>
@@ -165,6 +166,9 @@ It would have a countdown alongside the attempts. As the project advanced I remo
 <details><summary>Home</summary>
 <img src="">
 </details>
+<details><summary>Contact</summary>
+<img src="">
+</details>
 <details><summary>404</summary>
 <img src="">
 </details>
@@ -182,7 +186,9 @@ It would have a countdown alongside the attempts. As the project advanced I remo
 <details><summary>Home</summary>
 <img src="">
 </details>
-
+<details><summary>Contact</summary>
+<img src="">
+</details>
 <details><summary>404 Page</summary>
 <img src="">
 </details>
@@ -193,7 +199,9 @@ It would have a countdown alongside the attempts. As the project advanced I remo
 <details><summary>Home</summary>
 <img src="">
 </details>
-
+<details><summary>Contact</summary>
+<img src="">
+</details>
 <details><summary>404</summary>
 <img src="">
 </details>
