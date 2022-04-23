@@ -247,6 +247,40 @@ There are currently 14 features across the deployed site.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
+### Used Letters
+- Fully responsive on all screen sizes
+- Located at the bottom left level of the game screen
+- Allows the player to choose a difficulty level
+- User stories covered: 12, 11, 4, 6, 10
+<details><summary>Used Letters</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-used-letters.png">
+</details>
+
+### Music
+- Fully responsive on all screen sizes
+- Located at the top right level of the game screen
+- Allows the player to toggle game music on and off
+- User stories covered: 12, 11, 4, 5,
+<details><summary>Music</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-music.png">
+</details>
+
+### Contact
+- Fully responsive on all screen sizes
+- Allows the player to send a message or feedback to the owners Gmail
+- User stories covered: 12, 11, 4, 13
+<details><summary>Contact</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png">
+</details>
+
+### 404
+- Fully responsive on all screen sizes
+- Allows the user to be notified of a navigation error to a non existent page
+- User stories covered: 12, 11, 4,
+<details><summary>404</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-404.png">
+</details>
+
 [Back to Top](<#Table-of-Content>)
 ## Validation
 
