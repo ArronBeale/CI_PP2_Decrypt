@@ -348,8 +348,163 @@ The following browsers were used to test the site, no issues.
 
 
 ### Testing User Stories
-First Time User:
-1. 
+
+1. As a player, I would like to know how to play.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome | Upon landing on the page there is a welcome box to briefly explain it is a word guess game | Once the page loads the welcome screen appears for the player| As expected |
+| Rules | On the home page click the rules icon which is a question mark | Rules screen appears which contains the game rules for the player | As expected|
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+2. As a player, I like to choose a difficulty.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Difficulty buttons | On the lower right there are three difficulty buttons, click button to choose difficulty | Clicking each difficulty will give the associated attempts, easy x 10, medium x 8, hard x 5 | As expected |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+3. As a player, I would like to see my score.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Score | At the top of the game screen the score is displayed, as you win a round it will increase by one | Correctly guess the word and win, score increases by 1 | As expected |
+| Score | At the top of the game screen the score is displayed, as you lose a round it will reset to zero | Use all attempts and lose, score is reset to zero| As expected |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+4. As a player, I would like it minimal, no overload on screen.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+5. As a player, I would like it to be fun.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+6. As a player, I would like it to be challenging.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+7. As a player, I would like replayability.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+8. As a player, I would like a variety or words to guess.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+9. As a player, I would like to see how many attempts I have.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+10. As the site owner, I would like the game to be challenging and fun.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+11. As the site owner, I would like a simplistic design.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+12. As the site owner, I would like different device size compatability.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+13. As the site owner, I would like a contact form.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+14. As the site owner, I would like to provide difficulty levels.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
