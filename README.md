@@ -120,8 +120,12 @@ This allows players who came to the site to play the game to start playing immed
 
 ### Wireframes
 
+My original concept was a single page that would house everything such as the contact form, rules.
+It would have a countdown alongside the attempts. As the project advanced I removed the countdown as I began to feel it was unnecessary.
+
 <details><summary>Home</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/wireframes/wireframe-home.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/wireframes/wireframe-evolved.png">
 </details>
 
    
