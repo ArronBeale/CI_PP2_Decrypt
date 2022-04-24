@@ -401,8 +401,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Correct Word | Each round will generate a new five letter word from a list of the fifty most common five letter words in the English language, press play | A new word is generated for the player to guess | As expected |
+| used Letters | As the player uses an incorrect letter it is recorded in the used letters box, guess an incorrect letter| Incorrect letter should display in the used letters box | As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -413,7 +413,7 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
+| Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
 | | | | |
 
 <details><summary>Images</summary>
