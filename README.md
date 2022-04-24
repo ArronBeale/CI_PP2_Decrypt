@@ -79,7 +79,7 @@ The goal of this project is to create a challenging and fun word guessing game.
 5. As a player, I would like it to be fun.
 6. As a player, I would like it to be challenging.
 7. As a player, I would like replayability.
-8. As a player, I would like a variety or words to guess.
+8. As a player, I would like a variety of words to guess.
 9. As a player, I would like to see how many attempts I have.
  
 ### Site Owner
@@ -402,7 +402,7 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Correct Word | Each round will generate a new five letter word from a list of the fifty most common five letter words in the English language, press play | A new word is generated for the player to guess | As expected |
-| used Letters | As the player uses an incorrect letter it is recorded in the used letters box, guess an incorrect letter| Incorrect letter should display in the used letters box | As expected |
+| Used Letters | As the player uses an incorrect letter it is recorded in the used letters box, guess an incorrect letter| Incorrect letter should display in the used letters box | As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -414,7 +414,7 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
-| | | | |
+| Attempts | limitewd number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -425,19 +425,19 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Play / Stop | Play button will start a new game with a new word | Press play button and a new game will begin with a new word to guess | As expected |
+| Difficulty buttons | Choose a desired difficulty to make the challenge easier or harder  | Difficulty should increase or decrease depending on chosen difficulty | As expected |
 
 <details><summary>Images</summary>
 <img src="">
 <img src="">
 </details>
 
-8. As a player, I would like a variety or words to guess.
+8. As a player, I would like a variety of words to guess.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
+| Correct word | Each game will generate a new word from a list of the most common five letter words | Start game, new word should generate | As expected |
 | | | | |
 
 <details><summary>Images</summary>
