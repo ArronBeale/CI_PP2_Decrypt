@@ -192,6 +192,7 @@ body {
 .score-box {
     font-weight: bolder;
     font-size: 1.3rem;
+    padding-top: 5px;
 }
 
 #answer-box {
@@ -422,6 +423,10 @@ input {
         height: 100%;
     }
 
+    .game-box {
+        width: 80%;
+    }
+
 }
 
 /* Media query for tablets */
@@ -560,9 +565,18 @@ input {
 @media screen and (min-width: 701px) {
 
     .game-box {
-        width: 40%;
+        width: 50%;
         height: 100vh;
         padding-bottom: 40px;
+    }
+
+    .score-box {
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+
+    .difficulty-box-visible {
+        font-size: 1rem;
     }
 
     .contact-box {
@@ -573,7 +587,7 @@ input {
 /* Media query for tablets / laptops and higher size screens*/
 @media screen and (min-width: 1000px) {
     .game-box {
-        width: 30%;
+        width: 40%;
         height: 100vh;
         opacity: 1;
     }
