@@ -211,7 +211,7 @@ There are currently 14 features across the deployed site.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
-### Play /Stop
+### Play / Stop
 - Fully responsive on all screen sizes
 - Located at the mid level of the game screen
 - Allows player to start and stop game
@@ -366,6 +366,7 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | On the lower right there are three difficulty buttons, click button to choose difficulty | Clicking each difficulty will give the associated attempts, easy x 10, medium x 8, hard x 5 | As expected |
+| Difficulty buttons | When game starts difficulty is hidden to stop player refreshing attempts mid game | Click start game, difficulty menu should disappear during game | As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -388,8 +389,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Play / Stop | Click play button to start game, click stop icon to stop game | Game should start when play is clicked, game should end when stop is clicked| As expected |
+| score | As you win or lose score will be adjusted, score area kept to a minimum | score increases on win, resets on lose| As expected |
 
 <details><summary>Images</summary>
 <img src="">
