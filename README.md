@@ -497,8 +497,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Contact | Use navigation bar and click contact, fid contact form and submit name, email and message | This will send message to site owner via contact form | As expected |
+| Footer | Social media links can be used as an alternative to contact form to get in touc with site owner | Links will bring you to site owners linkedIn and HitHub pages | As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -509,8 +509,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
+| Rules Button | Click on rules button, rules will be displayed explaining the difficulty levels for the player| Rules screen will appear | As expected |
 
 <details><summary>Images</summary>
 <img src="">
