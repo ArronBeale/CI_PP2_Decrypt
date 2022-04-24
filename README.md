@@ -438,7 +438,7 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Correct word | Each game will generate a new word from a list of the most common five letter words | Start game, new word should generate | As expected |
-| | | | |
+| Future Feature | More words will be added to the word list in the future| Future Feature | Future Feature |
 
 <details><summary>Images</summary>
 <img src="">
@@ -449,8 +449,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Attempts | As game progresses attempts will be visible on game screen | Play game, if a guess is wrong, attempts will decrease | As expected |
+| Difficulty buttons | Choose a difficulty | Attempts will adjust to the selected difficulty | As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -461,8 +461,8 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
+| Attempts | limitewd number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
 
 <details><summary>Images</summary>
 <img src="">
@@ -497,7 +497,7 @@ The following browsers were used to test the site, no issues.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
+| | | | |
 | | | | |
 
 <details><summary>Images</summary>
@@ -549,17 +549,20 @@ You can clone the repository by following these steps:
 
 [Back to Top](<#Table-of-Content>)
 ## Credits
-- 
 
 ### Media
 - Audio track "Cyberpunk Street" provided by Ansimuz via soundcloud https://soundcloud.com/ansimuz/cyberpunk-street / www.patreon.com/ansimuz
+- background image from Joey kwok @spideyjoey, https://unsplash.com/@spideyjoey
 
 ### Code
-- 
+- Fonts provided by - Google Fonts
+- Font Awesome for the icons used on this project
 
 ## Acknowledgements
 
 Special thanks to the following:
-- 
+- Code Institute for providing this learning platform.
+- My Mentor Mo Shami for the valuable guidance and advice.
+- CI Slack Community for assistance in any help or queries asked.
 
 [Back to Top](<#Table-of-Content>)
