@@ -582,10 +582,6 @@ input {
     .contact-box {
         height: auto;
     }
-
-    footer {
-        position: fixed;
-    }
 }
 
 /* Media query for tablets / laptops and higher size screens*/
@@ -594,9 +590,5 @@ input {
         width: 40%;
         height: 100vh;
         opacity: 1;
-    }
-
-    footer {
-        position: fixed;
     }
 }
