@@ -1,4 +1,4 @@
-# Decrypt (Work in progress)
+# Decrypt
 Developer: Arron Beale
 
 ![responsive display image](https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/am-i-responsive.PNG)
