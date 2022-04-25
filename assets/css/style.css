@@ -420,7 +420,7 @@ input {
     }
 
     .contact-box {
-        height: 100%;
+        height: 80%;
     }
 
     .game-box {
@@ -590,5 +590,9 @@ input {
         width: 40%;
         height: 100vh;
         opacity: 1;
+    }
+
+    .contact-box {
+        width: 70%;
     }
 }
