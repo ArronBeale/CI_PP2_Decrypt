@@ -597,4 +597,8 @@ input {
     .contact-box {
         width: 70%;
     }
+
+    footer {
+        position: fixed;
+    }
 }
