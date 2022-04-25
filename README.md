@@ -378,6 +378,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | On the lower right there are three difficulty buttons, click button to choose difficulty | Clicking each difficulty will give the associated attempts, easy x 10, medium x 8, hard x 5 | As expected |
 | Difficulty buttons | When game starts difficulty is hidden to stop player refreshing attempts mid game | Click start game, difficulty menu should disappear during game | As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
@@ -389,6 +390,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Score | At the top of the game screen the score is displayed, as you win a round it will increase by one | Correctly guess the word and win, score increases by 1 | As expected |
 | Score | At the top of the game screen the score is displayed, as you lose a round it will reset to zero | Use all attempts and lose, score is reset to zero| As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
@@ -400,6 +402,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Play / Stop | Click play button to start game, click stop icon to stop game | Game should start when play is clicked, game should end when stop is clicked| As expected |
 | score | As you win or lose score will be adjusted, score area kept to a minimum | score increases on win, resets on lose| As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
@@ -412,6 +415,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Correct Word | Each round will generate a new five letter word from a list of the fifty most common five letter words in the English language, press play | A new word is generated for the player to guess | As expected |
 | Used Letters | As the player uses an incorrect letter it is recorded in the used letters box, guess an incorrect letter| Incorrect letter should display in the used letters box | As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-correct-word.png">
@@ -424,6 +428,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
 | Attempts | limitewd number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
@@ -436,6 +441,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Play / Stop | Play button will start a new game with a new word | Press play button and a new game will begin with a new word to guess | As expected |
 | Difficulty buttons | Choose a desired difficulty to make the challenge easier or harder  | Difficulty should increase or decrease depending on chosen difficulty | As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
@@ -448,6 +454,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Correct word | Each game will generate a new word from a list of the most common five letter words | Start game, new word should generate | As expected |
 | Future Feature | More words will be added to the word list in the future| Future Feature | Future Feature |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficorrect-wordculty.png">
@@ -459,6 +466,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Attempts | As game progresses attempts will be visible on game screen | Play game, if a guess is wrong, attempts will decrease | As expected |
 | Difficulty buttons | Choose a difficulty | Attempts will adjust to the selected difficulty | As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
@@ -471,6 +479,7 @@ The following browsers were used to test the site, no issues.
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
 | Attempts | limited number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
+| Game | Load into home page, find game and close welcome screen. Begin game  | Game begins and player can now play  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
@@ -496,6 +505,7 @@ The following browsers were used to test the site, no issues.
 | Navigation Bar | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
 | Footer | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
 | Welcome | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
+| Game | Responsive for all screen sizes greater than 293px x 553px  | All item should be visible  | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.png">
@@ -531,10 +541,12 @@ The following browsers were used to test the site, no issues.
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-|used letters not wiping on new game | |
+|Used letters not wiping on new game | |
 |Opening guess correct, score not increasing. | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
 |Attempts not resetting after game. | I had to add a function to check which mode was true and it would reset attempts accordingly|
 |Correct letters from previous game carrying to new game. | Upon win I set startGame function to be called twice which wipes the letters carrying over. |
+|Player could reset their attempts mid game | When game begins the difficulty buttons are hidden to stop player resetting attempts |
+
 [Back to Top](<#Table-of-Content>)
 ## Deployment
 The website was deployed to GitHub Pages via the following:
