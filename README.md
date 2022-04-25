@@ -155,7 +155,17 @@ It would have a countdown alongside the attempts. As the project advanced I remo
 
 ## Features
 
-There are currently 14 features across the deployed site.
+There are currently 15 features across the deployed site.
+
+### Game
+- Fully responsive on all screen sizes
+- Located on home page
+- Allows player to guess a five letter word
+- User stories covered: 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1,
+<details><summary>Logo</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-game.png">
+</details>
+
 
 ### Logo
 - Fully responsive on all screen sizes
@@ -354,11 +364,12 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Welcome | Upon landing on the page there is a welcome box to briefly explain it is a word guess game | Once the page loads the welcome screen appears for the player| As expected |
-| Rules | On the home page click the rules icon which is a question mark | Rules screen appears which contains the game rules for the player | As expected|
+| Rules | On the home page click the rules icon which is a question mark | Rules screen appears which contains the game rules for the player | As expected |
+
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png">
 </details>
 
 2. As a player, I like to choose a difficulty.
@@ -369,8 +380,7 @@ The following browsers were used to test the site, no issues.
 | Difficulty buttons | When game starts difficulty is hidden to stop player refreshing attempts mid game | Click start game, difficulty menu should disappear during game | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
 3. As a player, I would like to see my score.
@@ -381,8 +391,7 @@ The following browsers were used to test the site, no issues.
 | Score | At the top of the game screen the score is displayed, as you lose a round it will reset to zero | Use all attempts and lose, score is reset to zero| As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
 4. As a player, I would like it minimal, no overload on screen.
@@ -393,8 +402,8 @@ The following browsers were used to test the site, no issues.
 | score | As you win or lose score will be adjusted, score area kept to a minimum | score increases on win, resets on lose| As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
 5. As a player, I would like it to be fun.
@@ -405,8 +414,8 @@ The following browsers were used to test the site, no issues.
 | Used Letters | As the player uses an incorrect letter it is recorded in the used letters box, guess an incorrect letter| Incorrect letter should display in the used letters box | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-correct-word.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-used-letters.png">
 </details>
 
 6. As a player, I would like it to be challenging.
@@ -417,8 +426,8 @@ The following browsers were used to test the site, no issues.
 | Attempts | limitewd number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
 </details>
 
 7. As a player, I would like replayability.
@@ -429,8 +438,8 @@ The following browsers were used to test the site, no issues.
 | Difficulty buttons | Choose a desired difficulty to make the challenge easier or harder  | Difficulty should increase or decrease depending on chosen difficulty | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
 8. As a player, I would like a variety of words to guess.
@@ -441,8 +450,7 @@ The following browsers were used to test the site, no issues.
 | Future Feature | More words will be added to the word list in the future| Future Feature | Future Feature |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficorrect-wordculty.png">
 </details>
 
 9. As a player, I would like to see how many attempts I have.
@@ -453,8 +461,8 @@ The following browsers were used to test the site, no issues.
 | Difficulty buttons | Choose a difficulty | Attempts will adjust to the selected difficulty | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
 10. As the site owner, I would like the game to be challenging and fun.
@@ -462,35 +470,36 @@ The following browsers were used to test the site, no issues.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Difficulty buttons | Choose desired difficulty | If player chooses easy they will get ten attempts, medium they get eightr attempts and hard, five attempts| As expected |
-| Attempts | limitewd number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
+| Attempts | limited number of attempts to guess | Choose a difficulty, play the game and incorrect guess will deduct an attempt, when it hits zero player loses| As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
 </details>
 
 11. As the site owner, I would like a simplistic design.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Game | Visit home page and find the game | Find game with a simplistic minimal design to avoid any screen overload | As expected |
+| Contact | Visit contact page and find the contact form | Find contact form with a simplistic minimal design to avoid any screen overload | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-game.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png">
 </details>
 
 12. As the site owner, I would like different device size compatability.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
-| | | | |
+| Navigation Bar | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
+| Footer | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
+| Welcome | Responsive for all screen sizes greater than 293px x 553px| All item should be visible | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png">
 </details>
 
 13. As the site owner, I would like a contact form.
@@ -501,8 +510,8 @@ The following browsers were used to test the site, no issues.
 | Footer | Social media links can be used as an alternative to contact form to get in touc with site owner | Links will bring you to site owners linkedIn and HitHub pages | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png">
 </details>
 
 14. As the site owner, I would like to provide difficulty levels.
@@ -513,8 +522,8 @@ The following browsers were used to test the site, no issues.
 | Rules Button | Click on rules button, rules will be displayed explaining the difficulty levels for the player| Rules screen will appear | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png">
 </details>
 
 [Back to Top](<#Table-of-Content>)
