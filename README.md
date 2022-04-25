@@ -359,7 +359,7 @@ The following browsers were used to test the site, no issues.
 
 ### Testing User Stories
 
-1. As a player, I would like to know how to play.
+1. ### As a player, I would like to know how to play.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -372,7 +372,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png">
 </details>
 
-2. As a player, I like to choose a difficulty.
+2. ### As a player, I like to choose a difficulty.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -383,7 +383,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
-3. As a player, I would like to see my score.
+3. ### As a player, I would like to see my score.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -394,7 +394,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
-4. As a player, I would like it minimal, no overload on screen.
+4. ### As a player, I would like it minimal, no overload on screen.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -406,7 +406,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
 </details>
 
-5. As a player, I would like it to be fun.
+5. ### As a player, I would like it to be fun.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -418,7 +418,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-used-letters.png">
 </details>
 
-6. As a player, I would like it to be challenging.
+6. ### As a player, I would like it to be challenging.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -430,7 +430,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
 </details>
 
-7. As a player, I would like replayability.
+7. ### As a player, I would like replayability.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -442,7 +442,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
-8. As a player, I would like a variety of words to guess.
+8. ### As a player, I would like a variety of words to guess.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -453,7 +453,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficorrect-wordculty.png">
 </details>
 
-9. As a player, I would like to see how many attempts I have.
+9. ### As a player, I would like to see how many attempts I have.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -465,7 +465,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
 </details>
 
-10. As the site owner, I would like the game to be challenging and fun.
+10. ### As the site owner, I would like the game to be challenging and fun.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -477,7 +477,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
 </details>
 
-11. As the site owner, I would like a simplistic design.
+11. ### As the site owner, I would like a simplistic design.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -489,7 +489,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png">
 </details>
 
-12. As the site owner, I would like different device size compatability.
+12. ### As the site owner, I would like different device size compatability.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -502,7 +502,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png">
 </details>
 
-13. As the site owner, I would like a contact form.
+13. ### As the site owner, I would like a contact form.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -514,7 +514,7 @@ The following browsers were used to test the site, no issues.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png">
 </details>
 
-14. As the site owner, I would like to provide difficulty levels.
+14. ### As the site owner, I would like to provide difficulty levels.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
