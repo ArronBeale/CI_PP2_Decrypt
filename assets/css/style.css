@@ -75,7 +75,8 @@ body {
 }
 
 /* modal styles for welcome screen for when player arrives for first time */
-.backdrop-welcome, .backdrop-rules-active {
+.backdrop-welcome,
+.backdrop-rules-active {
     position: fixed;
     top: 0;
     left: 0;
@@ -322,7 +323,7 @@ body {
     display: flex;
     font-size: 20px;
     padding: 10px;
-    
+
 }
 
 #rules-box {
@@ -363,6 +364,7 @@ footer li {
     text-align: center;
 }
 
+/* Image for the 404 page */
 #error-image {
     background-image: url("../images/404.jpg");
     filter: hue-rotate(126deg);

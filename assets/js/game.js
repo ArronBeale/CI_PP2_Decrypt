@@ -97,7 +97,7 @@ song.volume = 0;
 
 let musicOffBtn = document.getElementById('btn-music-off');
 musicOffBtn.addEventListener('click', function () {
-    
+
     if (song.volume === 0) {
         song.volume = 1;
         musicOffBtn.style.color = 'white';
