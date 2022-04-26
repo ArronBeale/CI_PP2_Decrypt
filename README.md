@@ -173,7 +173,7 @@ There are currently 15 features across the deployed site.
 - Allows easy navigation to the home page
 - User stories covered: 12, 11, 4
 <details><summary>Logo</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-logo.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-logo.png?raw=true">
 </details>
 
 ### Navigation Bar
@@ -182,7 +182,7 @@ There are currently 15 features across the deployed site.
 - Allows easy navigation to the home and contact page
 - User stories covered: 12, 11, 4
 <details><summary>Navigation bar</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.PNG">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-navigation.PNG?raw=true">
 </details>
 
 ### Footer
@@ -191,7 +191,7 @@ There are currently 15 features across the deployed site.
 - Allows easy navigation to creators LinkedIn and GitHub pages.
 - User stories covered: 12, 11, 4
 <details><summary>Footer</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-footer.png?raw=true">
 </details>
 
 ### Welcome
@@ -200,7 +200,7 @@ There are currently 15 features across the deployed site.
 - Welcomes player and describes the game
 - User stories covered: 12, 11, 4, 1
 <details><summary>Welcome</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-welcome.png?raw=true">
 </details>
 
 ### Rules
@@ -209,7 +209,7 @@ There are currently 15 features across the deployed site.
 - Tells the player the rules of the game
 - User stories covered: 12, 11, 4, 1
 <details><summary>Rules</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-rules.png?raw=true">
 </details>
 
 ### Score
@@ -218,7 +218,7 @@ There are currently 15 features across the deployed site.
 - Shows the player their current score
 - User stories covered: 12, 11, 4, 3
 <details><summary>Score</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-score.png?raw=true">
 </details>
 
 ### Play / Stop
@@ -227,7 +227,7 @@ There are currently 15 features across the deployed site.
 - Allows player to start and stop game
 - User stories covered: 12, 11, 4, 7
 <details><summary>Play / Stop</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-play-stop.png?raw=true">
 </details>
 
 ### Attempts
@@ -236,7 +236,7 @@ There are currently 15 features across the deployed site.
 - Shows the player their current attempts
 - User stories covered: 12, 11, 4, 9
 <details><summary>Attempts</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-attempts.png?raw=true">
 </details>
 
 ### Correct Word
@@ -245,7 +245,7 @@ There are currently 15 features across the deployed site.
 - Shows the player the correct word on a win
 - User stories covered: 12, 11, 4, 9, 5
 <details><summary>Correct Word</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-correct-word.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-correct-word.png?raw=true">
 </details>
 
 ### Difficulty
@@ -254,7 +254,7 @@ There are currently 15 features across the deployed site.
 - Allows the player to choose a difficulty level
 - User stories covered: 12, 11, 4, 9, 5, 6, 2, 14, 10
 <details><summary>Difficulty</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-difficulty.png?raw=true">
 </details>
 
 ### Used Letters
@@ -263,7 +263,7 @@ There are currently 15 features across the deployed site.
 - Allows the player to choose a difficulty level
 - User stories covered: 12, 11, 4, 6, 10
 <details><summary>Used Letters</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-used-letters.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-used-letters.png?raw=true">
 </details>
 
 ### Music
@@ -272,7 +272,7 @@ There are currently 15 features across the deployed site.
 - Allows the player to toggle game music on and off
 - User stories covered: 12, 11, 4, 5,
 <details><summary>Music</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-music.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-music.png?raw=true">
 </details>
 
 ### Contact
@@ -280,7 +280,7 @@ There are currently 15 features across the deployed site.
 - Allows the player to send a message or feedback to the owners Gmail
 - User stories covered: 12, 11, 4, 13
 <details><summary>Contact</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-contact.png?raw=true">
 </details>
 
 ### 404
@@ -288,7 +288,7 @@ There are currently 15 features across the deployed site.
 - Allows the user to be notified of a navigation error to a non existent page
 - User stories covered: 12, 11, 4,
 <details><summary>404</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-404.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-404.png?raw=true">
 </details>
 
 [Back to Top](<#Table-of-Content>)
