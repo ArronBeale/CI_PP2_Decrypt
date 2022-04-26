@@ -163,7 +163,7 @@ There are currently 15 features across the deployed site.
 - Allows player to guess a five letter word
 - User stories covered: 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1,
 <details><summary>Logo</summary>
-<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-game.png">
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-game.PNG?raw=true">
 </details>
 
 
@@ -176,7 +176,7 @@ There are currently 15 features across the deployed site.
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/features/feature-logo.png">
 </details>
 
-### navigation Bar
+### Navigation Bar
 - Fully responsive on all screen sizes
 - Located on all pages
 - Allows easy navigation to the home and contact page
