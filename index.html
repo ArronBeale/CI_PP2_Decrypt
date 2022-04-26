@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- fav icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/images/apple-touch-icon.png?raw=true">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/images/favicon-32x32.png?raw=true">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/images/favicon-16x16.png?raw=true">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f561b9867c.js" crossorigin="anonymous"></script>
@@ -32,6 +32,7 @@
         </nav>
     </header>
 
+    <!-- This is the welcome back that appears when the player lands on the home page, they then close it-->
     <div class="backdrop-welcome">
         <div class="modal-box">
             <h2>Welcome Player!</h2><br>
@@ -43,6 +44,7 @@
         </div>
     </div>
 
+    <!-- This is the rules screen  that appears when the player clicks the rules icon, they can then close it-->
     <div id='rules-box' class="backdrop-rules-inactive">
         <div class="modal-box">
             <h2>Rules!</h2><br>
@@ -55,6 +57,7 @@
         </div>
     </div>
 
+    <!-- This is the main game area where all the game elements will be contained -->
     <div class="game-box">
         <div class="flex-box">
             <div id="music-box"><span id="btn-music-off"><i class="fas fa-volume-mute btn"></i></span></div>
@@ -66,6 +69,8 @@
         <div id="answer-box">
             <span id="answer"></span>
         </div>
+
+        <!-- each round these boxes will be filled with random letters and special chars to simulate an encryption for the game -->
         <div class="letter-box" id="box1">-</div>
         <div class="letter-box" id="box2">-</div>
         <div class="letter-box" id="box3">-</div>
@@ -85,6 +90,7 @@
         <span><i data-type="play" id='playBtn' class="fas fa-play btn game-controls"></i></span>
         <span><i data-type="stop" id='stopBtn' class="fas fa-stop btn game-controls"></i></span>
 
+        <!-- all used incorrect letters will be recorded here, correct letter will not be shown here-->
         <div id="used-letters-box"></div>
         <div>
             <p>Used Letters</p>
@@ -98,6 +104,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- This audio will play at volume zero when the page loads, the player then chooses to turn volume to 1 via music button -->
         <audio id='audio'
             src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/assets/audio/cyberpunk-street.mp3?raw=true"
             loop>

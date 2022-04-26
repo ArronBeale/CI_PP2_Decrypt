@@ -74,7 +74,7 @@ body {
     border-bottom: 1px solid rgb(85, 212, 53);
 }
 
-/* modal styles for welcome screen for when player arrives for first time */
+/* this is the styles for the welcome and rules modal that will be visible and hidden */
 .backdrop-welcome,
 .backdrop-rules-active {
     position: fixed;
@@ -94,6 +94,7 @@ body {
     opacity: 1;
 }
 
+/* when player closes the welcome screen this class will hide th screen to allow player to continue to the game */
 .backdrop-welcome-inactive {
     position: fixed;
     top: 0;
@@ -112,11 +113,7 @@ body {
     opacity: 1;
 }
 
-.backdrop-welcome-inactive {
-    visibility: hidden;
-    opacity: 0;
-}
-
+/* rules screen that will be hidden until the player clicks the rules button */
 .backdrop-rules-inactive {
     position: fixed;
     top: 0;
@@ -196,6 +193,7 @@ body {
     padding-top: 5px;
 }
 
+/* this will style the main area where the word will begin to be shown as correct letters are guessed */
 #answer-box {
     display: block;
     height: 60px;
@@ -212,6 +210,7 @@ body {
     border: 1px solid rgb(0, 0, 0);
 }
 
+/* this will style the letter boxes that contain random letters and symbols each round to simulate an encryption for the game */
 .letter-box {
     display: inline-block;
     height: 50px;
@@ -246,6 +245,7 @@ body {
     background-color: rgb(85, 212, 53);
 }
 
+/* this styles the area where all the incorrect used letters are recorded for the player*/
 #used-letters-box {
     display: block;
     height: 60px;
@@ -276,6 +276,7 @@ body {
     font-size: 1.5rem;
 }
 
+/* this will hide the difficulty box when the game runs so player cannot refresh their attempts*/
 .difficulty-box-hide {
     margin-top: 30px;
     text-align: left;

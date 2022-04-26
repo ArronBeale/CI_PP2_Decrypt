@@ -295,6 +295,17 @@ There are currently 15 features across the deployed site.
 ## Validation
 No errors were detected across all validation platforms.
 
+### javaScript Validation
+<details><summary>Game</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/validation-js-game.PNG?raw=true">
+</details>
+<details><summary>Contact</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/validation-js-contact.PNG?raw=true">
+</details>
+<details><summary>404</summary>
+<img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/validation-js-404.PNG?raw=true">
+</details>
+
 ### HTML Validation
 <details><summary>Home</summary>
 <img src="https://github.com/ArronBeale/CI_PP2_Decrypt/blob/main/docs/validation/validation-html-home.PNG?raw=true">
