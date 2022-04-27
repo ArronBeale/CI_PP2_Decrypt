@@ -553,7 +553,7 @@ The following browsers were used to test the site, no issues.
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-|Used letters not wiping on new game | |
+|Used letters not wiping on new game | Function was not created correctly, modified function and bug was then fixed. |
 |Opening guess correct, score not increasing. | I had to adjust the location of the code to check if guess was correct and it then began increasing the score|
 |Attempts not resetting after game. | I had to add a function to check which mode was true and it would reset attempts accordingly|
 |Correct letters from previous game carrying to new game. | Upon win I set startGame function to be called twice which wipes the letters carrying over. |
