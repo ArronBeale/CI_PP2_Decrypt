@@ -19,7 +19,7 @@ window.onload = function () {
                 console.log('FAILED...', error);
             });
     });
-}
+};
 
 let submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click', handleSubmit);
