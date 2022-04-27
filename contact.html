@@ -14,34 +14,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f561b9867c.js" crossorigin="anonymous"></script>
-
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 
     <title>Decrypt | Contact</title>
-
-    <!-- EmailJS script template used below for sending contact form messages to my Gmail-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('mcd7Qd9Dhv9KI6qxp');
-        })();
-    </script>
-    <script>
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 
 <body>
