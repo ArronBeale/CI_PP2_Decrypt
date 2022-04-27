@@ -92,12 +92,12 @@ let hard = false;
 
 let song = document.getElementById('audio');
 let playing = true;
-song.play();
+
 song.volume = 0;
 
 let musicOffBtn = document.getElementById('btn-music-off');
 musicOffBtn.addEventListener('click', function () {
-
+    song.play();
     if (song.volume === 0) {
         song.volume = 1;
         musicOffBtn.style.color = 'white';
